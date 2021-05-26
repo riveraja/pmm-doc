@@ -18,7 +18,7 @@
     
     
       
-        <title>Percona Monitoring and Management 2.9.1 - Percona Monitoring and Management</title>
+        <title>Backup and Restore - Percona Monitoring and Management</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#percona-monitoring-and-management-291" class="md-skip">
+        <a href="#backup-and-restore" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Percona Monitoring and Management 2.9.1
+              Backup and Restore
             
           </span>
         </div>
@@ -538,17 +538,19 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../using/index.html" class="md-nav__link"
+          <a href="index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Using
@@ -558,7 +560,7 @@
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           
-            <a href="../using/index.html" class="md-nav__link"
+            <a href="index.html" class="md-nav__link"
               style="margin: initial; padding: initial; pointer-events: initial">
           
             Using
@@ -571,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../using/interface.html" class="md-nav__link">
+      <a href="interface.html" class="md-nav__link">
         User Interface
       </a>
     </li>
@@ -583,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../using/alerting.html" class="md-nav__link">
+      <a href="alerting.html" class="md-nav__link">
         Integrated Alerting
       </a>
     </li>
@@ -593,11 +595,77 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../using/backup.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="backup.html" class="md-nav__link md-nav__link--active"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Backup and Restore
+          </a>
+        </label>
+      
+      <a href="backup.html" class="md-nav__link md-nav__link--active">
         Backup and Restore
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    Before you start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-location" class="md-nav__link">
+    Adding a storage location
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-create" class="md-nav__link">
+    Creating a backup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-restore" class="md-nav__link">
+    Restoring a backup
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -607,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../using/query-analytics.html" class="md-nav__link">
+      <a href="query-analytics.html" class="md-nav__link">
         Query Analytics
       </a>
     </li>
@@ -627,7 +695,7 @@
       <label class="md-nav__link" for="__nav_3_5">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="../using/platform/index.html" class="md-nav__link"
+          <a href="platform/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Percona Platform
@@ -637,7 +705,7 @@
         <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
           
-            <a href="../using/platform/index.html" class="md-nav__link"
+            <a href="platform/index.html" class="md-nav__link"
               style="margin: initial; padding: initial; pointer-events: initial">
           
             Percona Platform
@@ -650,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../using/platform/security-threat-tool.html" class="md-nav__link">
+      <a href="platform/security-threat-tool.html" class="md-nav__link">
         Security Threat Tool
       </a>
     </li>
@@ -662,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../using/platform/dbaas.html" class="md-nav__link">
+      <a href="platform/dbaas.html" class="md-nav__link">
         DBaaS
       </a>
     </li>
@@ -1799,19 +1867,17 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       <label class="md-nav__link" for="__nav_7">
         <span class="md-nav__icon md-icon"></span>
         
-          <a href="index.html" class="md-nav__link"
+          <a href="../release-notes/index.html" class="md-nav__link"
             style="margin: initial; padding: initial; pointer-events: initial">
         
           Release Notes
@@ -1821,7 +1887,7 @@
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           
-            <a href="index.html" class="md-nav__link"
+            <a href="../release-notes/index.html" class="md-nav__link"
               style="margin: initial; padding: initial; pointer-events: initial">
           
             Release Notes
@@ -1834,7 +1900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.18.0.html" class="md-nav__link">
+      <a href="../release-notes/2.18.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.18.0
       </a>
     </li>
@@ -1846,7 +1912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.17.0.html" class="md-nav__link">
+      <a href="../release-notes/2.17.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.17.0
       </a>
     </li>
@@ -1858,7 +1924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.16.0.html" class="md-nav__link">
+      <a href="../release-notes/2.16.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.16.0
       </a>
     </li>
@@ -1870,7 +1936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.15.1.html" class="md-nav__link">
+      <a href="../release-notes/2.15.1.html" class="md-nav__link">
         Percona Monitoring and Management 2.15.1
       </a>
     </li>
@@ -1882,7 +1948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.15.0.html" class="md-nav__link">
+      <a href="../release-notes/2.15.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.15.0
       </a>
     </li>
@@ -1894,7 +1960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.14.0.html" class="md-nav__link">
+      <a href="../release-notes/2.14.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.14.0
       </a>
     </li>
@@ -1906,7 +1972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.13.0.html" class="md-nav__link">
+      <a href="../release-notes/2.13.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.13.0
       </a>
     </li>
@@ -1918,7 +1984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.12.0.html" class="md-nav__link">
+      <a href="../release-notes/2.12.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.12.0
       </a>
     </li>
@@ -1930,7 +1996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.11.1.html" class="md-nav__link">
+      <a href="../release-notes/2.11.1.html" class="md-nav__link">
         Percona Monitoring and Management 2.11.1
       </a>
     </li>
@@ -1942,7 +2008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.11.0.html" class="md-nav__link">
+      <a href="../release-notes/2.11.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.11.0
       </a>
     </li>
@@ -1954,7 +2020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.10.1.html" class="md-nav__link">
+      <a href="../release-notes/2.10.1.html" class="md-nav__link">
         Percona Monitoring and Management 2.10.1
       </a>
     </li>
@@ -1966,7 +2032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.10.0.html" class="md-nav__link">
+      <a href="../release-notes/2.10.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.10.0
       </a>
     </li>
@@ -1976,63 +2042,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          <span class="md-nav__icon md-icon"></span>
-          
-            <a href="2.9.1.html" class="md-nav__link md-nav__link--active"
-              style="margin: initial; padding: initial; pointer-events: initial">
-          
-            Percona Monitoring and Management 2.9.1
-          </a>
-        </label>
-      
-      <a href="2.9.1.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../release-notes/2.9.1.html" class="md-nav__link">
         Percona Monitoring and Management 2.9.1
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#improvements" class="md-nav__link">
-    Improvements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bugs-fixed" class="md-nav__link">
-    Bugs Fixed
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2042,7 +2056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.9.0.html" class="md-nav__link">
+      <a href="../release-notes/2.9.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.9.0
       </a>
     </li>
@@ -2054,7 +2068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.8.0.html" class="md-nav__link">
+      <a href="../release-notes/2.8.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.8.0
       </a>
     </li>
@@ -2066,7 +2080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.7.0.html" class="md-nav__link">
+      <a href="../release-notes/2.7.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.7.0
       </a>
     </li>
@@ -2078,7 +2092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.6.1.html" class="md-nav__link">
+      <a href="../release-notes/2.6.1.html" class="md-nav__link">
         Percona Monitoring and Management 2.6.1
       </a>
     </li>
@@ -2090,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.6.0.html" class="md-nav__link">
+      <a href="../release-notes/2.6.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.6.0
       </a>
     </li>
@@ -2102,7 +2116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.5.0.html" class="md-nav__link">
+      <a href="../release-notes/2.5.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.5.0
       </a>
     </li>
@@ -2114,7 +2128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.4.0.html" class="md-nav__link">
+      <a href="../release-notes/2.4.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.4.0
       </a>
     </li>
@@ -2126,7 +2140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.3.0.html" class="md-nav__link">
+      <a href="../release-notes/2.3.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.3.0
       </a>
     </li>
@@ -2138,7 +2152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.2.2.html" class="md-nav__link">
+      <a href="../release-notes/2.2.2.html" class="md-nav__link">
         Percona Monitoring and Management 2.2.2
       </a>
     </li>
@@ -2150,7 +2164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.2.1.html" class="md-nav__link">
+      <a href="../release-notes/2.2.1.html" class="md-nav__link">
         Percona Monitoring and Management 2.2.1
       </a>
     </li>
@@ -2162,7 +2176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.2.0.html" class="md-nav__link">
+      <a href="../release-notes/2.2.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.2.0
       </a>
     </li>
@@ -2174,7 +2188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.1.0.html" class="md-nav__link">
+      <a href="../release-notes/2.1.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.1.0
       </a>
     </li>
@@ -2186,7 +2200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.0.1.html" class="md-nav__link">
+      <a href="../release-notes/2.0.1.html" class="md-nav__link">
         Percona Monitoring and Management 2.0.1
       </a>
     </li>
@@ -2198,7 +2212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2.0.0.html" class="md-nav__link">
+      <a href="../release-notes/2.0.0.html" class="md-nav__link">
         Percona Monitoring and Management 2.0.0
       </a>
     </li>
@@ -2237,15 +2251,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#improvements" class="md-nav__link">
-    Improvements
+  <a href="#before-you-start" class="md-nav__link">
+    Before you start
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#bugs-fixed" class="md-nav__link">
-    Bugs Fixed
+  <a href="#backup-location" class="md-nav__link">
+    Adding a storage location
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-create" class="md-nav__link">
+    Creating a backup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-restore" class="md-nav__link">
+    Restoring a backup
   </a>
   
 </li>
@@ -2262,60 +2290,129 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/percona/pmm-doc/edit/main/docs/release-notes/2.9.1.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/percona/pmm-doc/edit/main/docs/using/backup.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="percona-monitoring-and-management-291">Percona Monitoring and Management 2.9.1<a class="headerlink" href="#percona-monitoring-and-management-291" title="Permanent link">&para;</a></h1>
-<table class="docutils field-list" frame="void" rules="none">
-  <colgroup>
-    <col class="field-name">
-    <col class="field-body">
-  </colgroup>
-  <tbody valign="top">
-    <tr class="field-odd field">
-      <th class="field-name">Date:</th>
-      <td class="field-body">August 4, 2020</td>
-    </tr>
-    <tr class="field-even field">
-      <th class="field-name">Installation:</th>
-      <td class="field-body">
-        <a class="reference external" href="https://www.percona.com/doc/percona-monitoring-and-management/2.x/setting-up/">Installing Percona Monitoring and Management</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Percona Monitoring and Management (PMM) is a free and open-source platform for managing and monitoring MySQL, MongoDB, and PostgreSQL performance.</p>
-<h2 id="improvements">Improvements<a class="headerlink" href="#improvements" title="Permanent link">&para;</a></h2>
+                <h1 id="backup-and-restore">Backup and Restore<a class="headerlink" href="#backup-and-restore" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><b style="color:goldenrod">Caution</b> Backup and restore features are a technical preview and currently only work with MySQL database servers backing up to Amazon AWS S3 storage locations.</p>
+</blockquote>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://jira.percona.com/browse/PMM-6230">PMM-6230</a>: Custom dashboards set as Home remain so after update</li>
-<li><a href="https://jira.percona.com/browse/PMM-6300">PMM-6300</a>: Query Analytics Dashboard: Column sorting arrows made easier to use (Thanks to user debug for reporting this issue)</li>
-<li><a href="https://jira.percona.com/browse/PMM-6208">PMM-6208</a>: Security Threat Tool: Temporarily silence viewed but un-actioned alerts</li>
-<li><a href="https://jira.percona.com/browse/PMM-6315">PMM-6315</a>: Query Analytics Dashboard: Improved metrics names and descriptions</li>
-<li><a href="https://jira.percona.com/browse/PMM-6274">PMM-6274</a>: MySQL User Details Dashboard: View selected user&rsquo;s queries in Query Analytics Dashboard</li>
-<li><a href="https://jira.percona.com/browse/PMM-6266">PMM-6266</a>: Query Analytics Dashboard: Pagination device menu lists 25, 50 or 100 items per page</li>
-<li><a href="https://jira.percona.com/browse/PMM-6262">PMM-6262</a>: PostgreSQL Instance Summary Dashboard: Descriptions for all &lsquo;Temp Files&rsquo; views</li>
-<li><a href="https://jira.percona.com/browse/PMM-6253">PMM-6253</a>: Query Analytics Dashboard: Improved SQL formatting in Examples panel</li>
-<li><a href="https://jira.percona.com/browse/PMM-6211">PMM-6211</a>: Query Analytics Dashboard: Loading activity spinner added to Example, Explain and Tables tabs</li>
-<li><a href="https://jira.percona.com/browse/PMM-6162">PMM-6162</a>: Consistent sort order in dashboard drop-down filter lists</li>
-<li><a href="https://jira.percona.com/browse/PMM-5132">PMM-5132</a>: Better message when filter search returns nothing</li>
+<li>You have an AWS S3 storage account and location details for it.</li>
+<li>There is only one MySQL instance running on the node.</li>
+<li>MySQL is running:<ul>
+<li>as a service via <code>systemd</code>;</li>
+<li>with the name <code>mysql</code> (to confirm, use <code>systemctl status mysql</code>);</li>
+<li>from a <code>mysql</code> system user account.</li>
 </ul>
-<h2 id="bugs-fixed">Bugs Fixed<a class="headerlink" href="#bugs-fixed" title="Permanent link">&para;</a></h2>
+</li>
+<li>There is a <code>mysql</code> system group.</li>
+<li>MySQL is using the <code>/var/lib/mysql</code> directory for database storage.</li>
+<li>
+<p>Backup management has been enabled:</p>
+<ol>
+<li>Navigate to <em><i class="uil uil-cog"></i> Configuration&rarr;Settings&rarr;Advanced Settings</em>.</li>
+<li>Activate <em>Backup Management</em>.</li>
+<li>Click <em>Apply changes</em>.</li>
+<li>
+<p>In the left menu bar, click <em><i class="uil uil-history"></i>&rarr;Backup</em>.</p>
+<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_Backup_Management.jpg"><img alt="" src="../_images/PMM_Backup_Management.jpg" /></a></div></p>
+</li>
+</ol>
+</li>
+<li>
+<p>The following packages are needed for creating backups. They should be included in the <code>$PATH</code> environment variable:</p>
 <ul>
-<li><a href="https://jira.percona.com/browse/PMM-5783">PMM-5783</a>: Bulk failure of SHOW ALL SLAVES STATUS scraping on PS/MySQL distributions triggers errors</li>
-<li><a href="https://jira.percona.com/browse/PMM-6294">PMM-6294</a>: Query Analytics Dashboard doesn&rsquo;t resize well for some screen resolutions (Thanks to user debug for reporting this issue)</li>
-<li><a href="https://jira.percona.com/browse/PMM-6420">PMM-6420</a>: Wrong version in successful update pop-up window</li>
-<li><a href="https://jira.percona.com/browse/PMM-6319">PMM-6319</a>: Query Analytics Dashboard: Query scrolls out of view when selected</li>
-<li><a href="https://jira.percona.com/browse/PMM-6302">PMM-6302</a>: Query Analytics Dashboard: Unnecessary EXPLAIN requests</li>
-<li><a href="https://jira.percona.com/browse/PMM-6256">PMM-6256</a>: Query Analytics Dashboard: <code>InvalidNamespace</code> EXPLAIN error with some MongoDB queries</li>
-<li><a href="https://jira.percona.com/browse/PMM-6329">PMM-6329</a>: Query Analytics Dashboard: Unclear origin of sparkline tool-tip on mouse-over</li>
-<li><a href="https://jira.percona.com/browse/PMM-6259">PMM-6259</a>: Query Analytics Dashboard: Slow appearance of query time distribution graph for some queries</li>
-<li><a href="https://jira.percona.com/browse/PMM-6189">PMM-6189</a>: Disk Details Dashboard: Disk IO Size chart larger by factor of 512</li>
-<li><a href="https://jira.percona.com/browse/PMM-6269">PMM-6269</a>: Query Analytics Dashboard: Metrics drop-down list obscured when opened</li>
-<li><a href="https://jira.percona.com/browse/PMM-6247">PMM-6247</a>: Query Analytics Dashboard: Overview table not resizing on window size change</li>
-<li><a href="https://jira.percona.com/browse/PMM-6227">PMM-6227</a>: Home Dashboard redirection to Node Summary Dashboard not working</li>
+<li><a href="https://www.percona.com/software/mysql-database/percona-xtrabackup">xtrabackup</a>, which includes:<ul>
+<li><a href="https://www.percona.com/doc/percona-xtrabackup/2.3/xbcloud/xbcloud.html"><code>xbcloud</code></a>;</li>
+<li><a href="https://www.percona.com/doc/percona-xtrabackup/2.3/xbstream/xbstream.html"><code>xbstream</code></a>;</li>
 </ul>
+</li>
+<li><a href="https://www.percona.com/doc/percona-xtrabackup/LATEST/backup_scenarios/compressed_backup.html"><code>qpress</code></a>.</li>
+</ul>
+<p><strong>The versions of each must be compatible with the installed version of MySQL.</strong></p>
+</li>
+</ul>
+<h2 id="backup-location">Adding a storage location<a class="headerlink" href="#backup-location" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Navigate to Backup Management&rarr;Storage locations.</li>
+<li>Click <em>Add</em>.</li>
+<li>
+<p>Fill in the form fields.</p>
+<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_Backup_Management_Locations_Add_Storage_Location.jpg"><img alt="" src="../_images/PMM_Backup_Management_Locations_Add_Storage_Location.jpg" /></a></div></p>
+<ul>
+<li><em>Name</em>:</li>
+<li><em>Description</em>:</li>
+<li><em>Type:</em><ul>
+<li><em>S3</em>:</li>
+<li><em>Local Client:</em> (Not currently implemented)</li>
+<li><em>Local Server:</em> (Not currently implemented)</li>
+</ul>
+</li>
+<li><em>Endpoint:</em></li>
+<li><em>Bucket Name:</em></li>
+<li><em>Access Key:</em></li>
+<li><em>Secret Key:</em></li>
+</ul>
+</li>
+<li>
+<p>Click <em>Add</em> to add the location or <em>Test</em> to test the connection.</p>
+</li>
+</ol>
+<h2 id="backup-create">Creating a backup<a class="headerlink" href="#backup-create" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>You must add a <a href="#backup-location">backup storage location</a> before backing up.</p>
+</blockquote>
+<ol>
+<li>
+<p>Navigate to <em>Backup Management&rarr;Backup Inventory</em>.</p>
+</li>
+<li>
+<p>Click <i class="uil uil-plus-square"></i> Add.</p>
+</li>
+<li>
+<p>In the <em>Backup On Demand</em> dialog, enter values for:</p>
+<ul>
+<li><em>Service name</em> &ndash; The service being backed up.</li>
+<li><em>Backup name</em> &ndash; A unique name for the backup.</li>
+<li><em>Description</em> &ndash; A long description.</li>
+<li><em>Location</em> &ndash; The predefined storage location.</li>
+</ul>
+<blockquote>
+<p><em>Vendor</em> is a read-only value showing the database vendor name. (Currently only for the supported MySQL service.)</p>
+</blockquote>
+</li>
+<li>
+<p>Click <em>Backup</em>.</p>
+</li>
+<li>
+<p>In the <em>Backup Inventory</em> pane, watch the <em>Status</em> column.</p>
+</li>
+</ol>
+<h2 id="backup-restore">Restoring a backup<a class="headerlink" href="#backup-restore" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>For this release, you can only restore a backup to the same service. I.e. a MySQL backup of service <code>mymsql-service-1</code> can only be restored to a MySQL database server registered with the same service name. Future releases will give more flexibility to restore backups to other service types.</p>
+</blockquote>
+<ol>
+<li>
+<p>Navigate to <em>Backup Management&rarr;Backup Inventory</em></p>
+</li>
+<li>
+<p>Find the row with the backup you want to restore.</p>
+</li>
+<li>
+<p>In the <em>Actions</em> column for that row, click <em>Restore from backup</em></p>
+</li>
+<li>
+<p>In the <em>Restore from backup</em> dialog, check the values and click <em>Restore</em></p>
+</li>
+<li>
+<p>Navigate to the <em>Restore History</em> tab to check the status of the restored backup</p>
+</li>
+</ol>
                 
                   
                     
@@ -2324,7 +2421,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-02-09
+      Last update: 2021-05-18
     
   </small>
 </div>
@@ -2347,7 +2444,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="2.10.0.html" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="alerting.html" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2356,19 +2453,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Percona Monitoring and Management 2.10.0
+              Integrated Alerting
             </div>
           </div>
         </a>
       
       
-        <a href="2.9.0.html" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="query-analytics.html" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Percona Monitoring and Management 2.9.0
+              Query Analytics
             </div>
           </div>
           <div class="md-footer__button md-icon">
