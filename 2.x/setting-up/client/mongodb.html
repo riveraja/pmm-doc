@@ -2655,7 +2655,7 @@ mongo <span class="m">127</span>.0.0.1:27017
 <p>When adding nodes of a replica set, add each node separately using the same cluster name.</p>
 </li>
 <li>
-<p>Atlas doesn&rsquo;t support direct connections. When connecting to an Atlas instance, use the <code>pmm-admin</code> option <code>--direct-connection=false</code>. (Doing so will prevent replicaset status from working.)</p>
+<p>Atlas doesn&rsquo;t support direct connections. When connecting to an Atlas instance, use the <code>pmm-admin</code> option <code>--direct-connection=false</code>. (Doing so will prevent replicaset status from working and the MongoDB Overview dashboard widget will show invalid values.)</p>
 </li>
 </ul>
 <h2 id="check-the-service">Check the service<a class="headerlink" href="#check-the-service" title="Permanent link">&para;</a></h2>
@@ -2709,7 +2709,7 @@ mongo <span class="m">127</span>.0.0.1:27017
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-05-26
+      Last update: 2021-05-27
     
   </small>
 </div>
