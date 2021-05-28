@@ -18,7 +18,7 @@
     
     
       
-        <title>Monitoring remote instances. - Percona Monitoring and Management</title>
+        <title>Monitoring remote instances - Percona Monitoring and Management</title>
       
     
     
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Monitoring remote instances.
+              Monitoring remote instances
             
           </span>
         </div>
@@ -244,12 +244,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
         <span class="md-nav__icon md-icon"></span>
@@ -372,12 +374,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
       
       <label class="md-nav__link" for="__nav_2_2">
         <span class="md-nav__icon md-icon"></span>
@@ -516,6 +520,70 @@
       <a href="haproxy.html" class="md-nav__link">
         HAProxy
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="remote.html" class="md-nav__link md-nav__link--active"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Monitoring remote instances
+          </a>
+        </label>
+      
+      <a href="remote.html" class="md-nav__link md-nav__link--active">
+        Monitoring remote instances
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-settings" class="md-nav__link">
+    Recommended settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-check-for-scrape-timeouts" class="md-nav__link">
+    How to check for scrape timeouts
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2184,14 +2252,14 @@
       
         <li class="md-nav__item">
   <a href="#recommended-settings" class="md-nav__link">
-    Recommended settings.
+    Recommended settings
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#how-to-check-for-scrape-timeouts" class="md-nav__link">
-    How to check for scrape timeouts.
+    How to check for scrape timeouts
   </a>
   
 </li>
@@ -2213,9 +2281,9 @@
                   </a>
                 
                 
-                <h1 id="monitoring-remote-instances">Monitoring remote instances.<a class="headerlink" href="#monitoring-remote-instances" title="Permanent link">&para;</a></h1>
-<h2 id="recommended-settings">Recommended settings.<a class="headerlink" href="#recommended-settings" title="Permanent link">&para;</a></h2>
-<p>When monitoring remote instances including RDS and Google instances, network latency might affect the scrape process and throw timeout errors. 
+                <h1 id="monitoring-remote-instances">Monitoring remote instances<a class="headerlink" href="#monitoring-remote-instances" title="Permanent link">&para;</a></h1>
+<h2 id="recommended-settings">Recommended settings<a class="headerlink" href="#recommended-settings" title="Permanent link">&para;</a></h2>
+<p>When monitoring remote instances including RDS and Google instances, network latency might affect the scrape process and throw timeout errors.
 For this reason, it is recommended to lower the metrics resolution in the settings section using the menu on the left side (The gear icon).</p>
 <p>Starting with PMM 2.18, the scrape timeout has been updated according to the following rules:</p>
 <ul>
@@ -2223,9 +2291,9 @@ For this reason, it is recommended to lower the metrics resolution in the settin
 <li>For resolutions &lt;= 10 seconds, timeout is set to resolution minus 1 second. For example, for 10 second resolution, timeout will be set at 9 seconds.</li>
 <li>For lower resolutions (values &gt; 10 seconds), the scrape timeout is set to 90% of the resolution time. For example, for 60 second resolution, the scrape timeout will be set to 54 seconds.</li>
 </ul>
-<h2 id="how-to-check-for-scrape-timeouts">How to check for scrape timeouts.<a class="headerlink" href="#how-to-check-for-scrape-timeouts" title="Permanent link">&para;</a></h2>
+<h2 id="how-to-check-for-scrape-timeouts">How to check for scrape timeouts<a class="headerlink" href="#how-to-check-for-scrape-timeouts" title="Permanent link">&para;</a></h2>
 <p>Sometimes it is hard to check if you are using the correct values to scrape or if there some other reason why there is no data in a dashboard even when the instance has been added correctly and the agent is running.</p>
-<p>One aditional step you can do is to check for scrape target statuses. Browse to http://<your-pmm-server-address-here>/prometheus/targets and then click on the Unhealthy button. </p>
+<p>One aditional step you can do is to check for scrape target statuses. Browse to http://<your-pmm-server-address-here>/prometheus/targets and then click on the Unhealthy button.</p>
 <p><div class="lightgallery"><a data-sub-html="image" href="../../_images/scrape_targets_01.png"><img alt="image" src="../../_images/scrape_targets_01.png" /></a></div></p>
 <p>The page will show only agents having issues while scrapping and the scrape result including the error messages.</p>
 <p><div class="lightgallery"><a data-sub-html="image" href="../../_images/scrape_targets_02.png"><img alt="image" src="../../_images/scrape_targets_02.png" /></a></div></p>
@@ -2260,6 +2328,39 @@ For this reason, it is recommended to lower the metrics resolution in the settin
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="haproxy.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              HAProxy
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../using/index.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Using
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
