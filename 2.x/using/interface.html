@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-rendering-error" class="md-skip">
+        <a href="#user-interface" class="md-skip">
           Skip to content
         </a>
       
@@ -594,9 +594,98 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="interface.html" class="md-nav__link md-nav__link--active"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            User Interface
+          </a>
+        </label>
+      
       <a href="interface.html" class="md-nav__link md-nav__link--active">
         User Interface
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#logging-in" class="md-nav__link">
+    Logging in
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboards" class="md-nav__link">
+    Dashboards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    Controls
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    Navigation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panels" class="md-nav__link">
+    Panels
+  </a>
+  
+    <nav class="md-nav" aria-label="Panels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#panel-menu" class="md-nav__link">
+    Panel menu
+  </a>
+  
+    <nav class="md-nav" aria-label="Panel menu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view" class="md-nav__link">
+    View
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2212,6 +2301,75 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#logging-in" class="md-nav__link">
+    Logging in
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboards" class="md-nav__link">
+    Dashboards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    Controls
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    Navigation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#panels" class="md-nav__link">
+    Panels
+  </a>
+  
+    <nav class="md-nav" aria-label="Panels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#panel-menu" class="md-nav__link">
+    Panel menu
+  </a>
+  
+    <nav class="md-nav" aria-label="Panel menu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view" class="md-nav__link">
+    View
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2227,20 +2385,119 @@
                   </a>
                 
                 
-                <h1 id="macro-rendering-error"><em>Macro Rendering Error</em><a class="headerlink" href="#macro-rendering-error" title="Permanent link">&para;</a></h1>
-<p><strong>UndefinedError</strong>: &lsquo;icon&rsquo; is undefined</p>
-<div class="highlight"><pre><span></span><code>Traceback (most recent call last):
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/mkdocs_macros/plugin.py&quot;, line 443, in render
-    return md_template.render(**page_variables)
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 1304, in render
-    self.environment.handle_exception()
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 925, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File &quot;&lt;template&gt;&quot;, line 53, in top-level template code
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 474, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: &#39;icon&#39; is undefined
-</code></pre></div>
+                <h1 id="user-interface">User Interface<a class="headerlink" href="#user-interface" title="Permanent link">&para;</a></h1>
+<p>PMM&rsquo;s user interface is a browser application based on <a href="https://grafana.com/docs/grafana/latest/">Grafana</a>. This page explains how to log in, how the user interface is laid out, and what the controls do.</p>
+<h2 id="logging-in">Logging in<a class="headerlink" href="#logging-in" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Start a web browser and in the address bar enter the server name or IP address of the PMM server host.</li>
+<li>
+<p>The page loads showing the PMM login screen.</p>
+<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_Login.jpg"><img alt="" src="../_images/PMM_Login.jpg" /></a></div></p>
+</li>
+<li>
+<p>Enter the username and password given to you by your system administrator. The defaults are:</p>
+<ul>
+<li>Username: <code>admin</code></li>
+<li>Password: <code>admin</code></li>
+</ul>
+</li>
+<li>Click <em>Log in</em></li>
+<li>If this is your first time logging in, you&rsquo;ll be asked to set a new password. (We recommend you do.) Enter a new password in both fields and click <em>Submit</em>. You can click <em>Skip</em> to carry on with the default password.</li>
+<li>
+<p>The PMM Home dashboard loads.</p>
+<p><div class="lightgallery"><a data-sub-html="PMM Home dashboard" href="../_images/PMM_Home_Dashboard.jpg"><img alt="PMM Home dashboard" src="../_images/PMM_Home_Dashboard.jpg" /></a></div></p>
+</li>
+</ol>
+<h2 id="dashboards">Dashboards<a class="headerlink" href="#dashboards" title="Permanent link">&para;</a></h2>
+<p>The interface is a collection of web pages called <em>dashboards</em>.</p>
+<p>Dashboards are grouped into <em>folders</em>. You can customize these, by renaming them or creating new ones.</p>
+<p>The area inside dashboards is populated by <em>panels</em>. Some are in collapsible panel groups. A panel can show a value, a graph, a chart, or a visual representation of a set.</p>
+<h2 id="controls">Controls<a class="headerlink" href="#controls" title="Permanent link">&para;</a></h2>
+<p>These menus and controls appear on all dashboards:</p>
+<ol>
+<li>Main menu  (also <em>Grafana menu</em>, <em>side menu</em>)</li>
+<li>Navigation bar</li>
+<li>View controls</li>
+<li>View selectors (dynamic contents)</li>
+<li>Shortcut menu (dynamic contents)</li>
+</ol>
+<p>(For details see <a href="../details/interface.html">UI Components</a>.)</p>
+<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_Home_Dashboard_Numbered.png"><img alt="" src="../_images/PMM_Home_Dashboard_Numbered.png" /></a></div></p>
+<h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
+<p><strong>Search for a dashboard by name</strong></p>
+<p>There are two ways to open the dashboard search page. (Each takes you to the same search screen.)</p>
+<ul>
+<li>Click the <i class="uil uil-search"></i> icon in the main menu.</li>
+<li>Click the dashboard name in the navigation bar (top row, to the right of the <i class="uil uil-apps"></i> icon). (To search within the current folder, click the folder name instead of the dashboard name.)</li>
+</ul>
+<p><div class="lightgallery"><a data-sub-html="Search dashboards by name" href="../_images/PMM_Home_Dashboard_Search.jpg"><img alt="Search dashboards by name" src="../_images/PMM_Home_Dashboard_Search.jpg" /></a></div></p>
+<ol>
+<li>
+<p>Click <em>Search dashboards by name</em> and begin typing any part of the dashboard name (in this example, &ldquo;<em>Instances</em>&rdquo;).
+    <div class="lightgallery"><a data-sub-html="Search dashboards by name" href="../_images/PMM_Home_Dashboard_Search_String.jpg"><img alt="Search dashboards by name" src="../_images/PMM_Home_Dashboard_Search_String.jpg" /></a></div></p>
+</li>
+<li>
+<p>Click one of the search results to go to that dashboard. Change the search text to refine the list.</p>
+</li>
+<li>
+<p>To abandon the search, click the <i class="uil uil-times"></i> icon at the end of the search bar.</p>
+</li>
+</ol>
+<p><strong>Open a dashboard with the menu</strong></p>
+<p>In the <a href="../details/interface.html#main-menu">main menu</a>, the  <em>PMM Dashboards</em> icon reveals a submenu containing links to all PMM dashboards grouped by service type. (This menu will eventually replace the <a href="../details/interface.html#shortcut-menu">shortcut menu</a> which has links to commonly-used dashboards.</p>
+<h2 id="panels">Panels<a class="headerlink" href="#panels" title="Permanent link">&para;</a></h2>
+<p>Charts, graphs and set-based panels reveal extra information when the mouse is moved over them.</p>
+<p>Some panels have an information icon <i class="fa fa-info"></i> in the top left corner. Mouse over this to reveal panel information.</p>
+<h3 id="panel-menu">Panel menu<a class="headerlink" href="#panel-menu" title="Permanent link">&para;</a></h3>
+<p>At the top of each panel and to the right of the panel name is the <em>panel menu</em>.</p>
+<p><div class="lightgallery"><a data-sub-html="image" href="../_images/PMM_Common_Panel_Menu.jpg"><img alt="image" src="../_images/PMM_Common_Panel_Menu.jpg" /></a></div></p>
+<blockquote>
+<p><strong>Tip</strong> The menu is hidden until you mouse over it. Look for the <i class="uil uil-angle-down"></i> symbol in the title bar of a panel.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><i class="uil uil-eye"></i> View</td>
+<td>Open the panel in full window mode</td>
+</tr>
+<tr>
+<td align="center"><i class="uil uil-share-alt"></i> Share</td>
+<td><a href="#rendering-dashboard-images">Render the panel&rsquo;s image for sharing</a></td>
+</tr>
+<tr>
+<td align="center"><i class="uil uil-compass"></i> Explore</td>
+<td>Run <a href="https://prometheus.io/docs/prometheus/latest/querying/basics/">PromQL</a> queries</td>
+</tr>
+<tr>
+<td align="center"><i class="fa fa-info-circle"></i> Inspect</td>
+<td>See the panel&rsquo;s data or definition</td>
+</tr>
+<tr>
+<td align="center"><i class="uil uil-cube"></i> More</td>
+<td>(Only charts and graphs) Additional options</td>
+</tr>
+</tbody>
+</table>
+<h4 id="view">View<a class="headerlink" href="#view" title="Permanent link">&para;</a></h4>
+<p>The <em>View</em> menu items opens panels in full-window mode. This is useful for graphs with several metrics.</p>
+<p>Exit a panel&rsquo;s full window mode by pressing <em>Escape</em> or clicking the left arrow <i class="uil uil-arrow-left"></i> next to the dashboard name.</p>
+<blockquote>
+<p><strong>See also</strong></p>
+<ul>
+<li>
+<p><a href="../how-to/render-dashboard-images.html">How to render dashboard images</a></p>
+</li>
+<li>
+<p><a href="../how-to/annotate.html">How to annotate special events</a></p>
+</li>
+</ul>
+</blockquote>
                 
                   
                     

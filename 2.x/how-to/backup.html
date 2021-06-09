@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-rendering-error" class="md-skip">
+        <a href="#backup" class="md-skip">
           Skip to content
         </a>
       
@@ -2227,20 +2227,40 @@
                   </a>
                 
                 
-                <h1 id="macro-rendering-error"><em>Macro Rendering Error</em><a class="headerlink" href="#macro-rendering-error" title="Permanent link">&para;</a></h1>
-<p><strong>UndefinedError</strong>: &lsquo;icon&rsquo; is undefined</p>
-<div class="highlight"><pre><span></span><code>Traceback (most recent call last):
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/mkdocs_macros/plugin.py&quot;, line 443, in render
-    return md_template.render(**page_variables)
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 1304, in render
-    self.environment.handle_exception()
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 925, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File &quot;&lt;template&gt;&quot;, line 7, in top-level template code
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 474, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: &#39;icon&#39; is undefined
-</code></pre></div>
+                <h1 id="backup">Backup<a class="headerlink" href="#backup" title="Permanent link">&para;</a></h1>
+<ol>
+<li>Navigate to <em>PMM Settings&rarr;Advanced Settings</em></li>
+<li>Activate <em>Backup Management</em></li>
+<li>Click <em>Apply changes</em></li>
+<li>
+<p>In the left menu bar, click <em><i class="uil uil-history"></i>&rarr;Backup</em></p>
+<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_Backup_Management.jpg"><img alt="" src="../_images/PMM_Backup_Management.jpg" /></a></div></p>
+</li>
+<li>
+<p>Click <em>Add</em></p>
+</li>
+<li>
+<p>Fill in the form fields</p>
+<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_Backup_Management_Locations_Add_Storage_Location.jpg"><img alt="" src="../_images/PMM_Backup_Management_Locations_Add_Storage_Location.jpg" /></a></div></p>
+<ul>
+<li><em>Name</em>:</li>
+<li><em>Description</em>:</li>
+<li><em>Type:</em><ul>
+<li><em>S3</em>:</li>
+<li><em>Local Client:</em></li>
+<li><em>Local Server:</em></li>
+</ul>
+</li>
+<li><em>Endpoint:</em></li>
+<li><em>Bucket Name:</em></li>
+<li><em>Access Key:</em></li>
+<li><em>Secret Key:</em></li>
+</ul>
+</li>
+<li>
+<p>Click <em>Add</em> to add the location or <em>Test</em> to test the connection.</p>
+</li>
+</ol>
                 
                   
                     

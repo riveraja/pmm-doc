@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-rendering-error" class="md-skip">
+        <a href="#troubleshoot" class="md-skip">
           Skip to content
         </a>
       
@@ -827,9 +827,147 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="troubleshoot.html" class="md-nav__link md-nav__link--active"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Troubleshoot
+          </a>
+        </label>
+      
       <a href="troubleshoot.html" class="md-nav__link md-nav__link--active">
         Troubleshoot
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoot-update" class="md-nav__link">
+    Update
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoot-connection" class="md-nav__link">
+    PMM Server/PMM Client connection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-difficulties" class="md-nav__link">
+    Connection difficulties
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection difficulties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#passwords" class="md-nav__link">
+    Passwords
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrated-alerting" class="md-nav__link">
+    Integrated Alerting
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrated Alerting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-integrated-alerting-icon" class="md-nav__link">
+    No  Integrated Alerting icon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrated-alerting-icon-but-no-submenu" class="md-nav__link">
+     Integrated Alerting icon but no submenu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unreachable-external-ip-addresses" class="md-nav__link">
+    Unreachable external IP addresses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-alertmanager-integration" class="md-nav__link">
+    What is 'Alertmanager integration'?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notification-channels-not-working" class="md-nav__link">
+    Notification channels not working
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-difference-usernamepassword-vs-identitysecret" class="md-nav__link">
+    What's the difference: Username/Password vs Identity/Secret
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alert-rule-templates-is-disabled" class="md-nav__link">
+    Alert Rule Templates is disabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-rules" class="md-nav__link">
+    Creating rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-in-templates" class="md-nav__link">
+    Variables in Templates
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2212,6 +2350,124 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoot-update" class="md-nav__link">
+    Update
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshoot-connection" class="md-nav__link">
+    PMM Server/PMM Client connection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-difficulties" class="md-nav__link">
+    Connection difficulties
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection difficulties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#passwords" class="md-nav__link">
+    Passwords
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrated-alerting" class="md-nav__link">
+    Integrated Alerting
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrated Alerting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-integrated-alerting-icon" class="md-nav__link">
+    No  Integrated Alerting icon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrated-alerting-icon-but-no-submenu" class="md-nav__link">
+     Integrated Alerting icon but no submenu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unreachable-external-ip-addresses" class="md-nav__link">
+    Unreachable external IP addresses
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-alertmanager-integration" class="md-nav__link">
+    What is 'Alertmanager integration'?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notification-channels-not-working" class="md-nav__link">
+    Notification channels not working
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whats-the-difference-usernamepassword-vs-identitysecret" class="md-nav__link">
+    What's the difference: Username/Password vs Identity/Secret
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alert-rule-templates-is-disabled" class="md-nav__link">
+    Alert Rule Templates is disabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-rules" class="md-nav__link">
+    Creating rules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-in-templates" class="md-nav__link">
+    Variables in Templates
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2227,20 +2483,118 @@
                   </a>
                 
                 
-                <h1 id="macro-rendering-error"><em>Macro Rendering Error</em><a class="headerlink" href="#macro-rendering-error" title="Permanent link">&para;</a></h1>
-<p><strong>UndefinedError</strong>: &lsquo;icon&rsquo; is undefined</p>
-<div class="highlight"><pre><span></span><code>Traceback (most recent call last):
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/mkdocs_macros/plugin.py&quot;, line 443, in render
-    return md_template.render(**page_variables)
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 1304, in render
-    self.environment.handle_exception()
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 925, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File &quot;&lt;template&gt;&quot;, line 61, in top-level template code
-  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 474, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: &#39;icon&#39; is undefined
+                <h1 id="troubleshoot">Troubleshoot<a class="headerlink" href="#troubleshoot" title="Permanent link">&para;</a></h1>
+<h2 id="troubleshoot-update">Update<a class="headerlink" href="#troubleshoot-update" title="Permanent link">&para;</a></h2>
+<p>If PMM server wasn&rsquo;t updated properly, or if you have concerns about the release, you can force the update process in 2 ways:</p>
+<ol>
+<li>
+<p>From the UI  -  Home panel: click with the Alt key on the reload icon in the Update panel (IMG needed) to make the Update Button visible even if you are on the same version as available for update. Pressing this button will force the system to rerun the update so that any broken or not installed components can be installed. In this case, you&rsquo;ll go through the usual update process with update logs and successful messages at the end.</p>
+</li>
+<li>
+<p>By  API  call (if UI not available): You can call the Update API directly with:</p>
+<div class="highlight"><pre><span></span><code>curl --user admin:admin --request POST <span class="s1">&#39;http://PMM_SERVER/v1/Updates/Start&#39;</span>
 </code></pre></div>
+<p>Replace <code>admin:admin</code> with your username/password, and replace <code>PMM_SERVER</code> with your server address.</p>
+<blockquote>
+<p>You will not see the logs using this method.</p>
+</blockquote>
+</li>
+</ol>
+<p>Refresh The Home page in 2-5 min and you should see that PMM was updated.</p>
+<h2 id="troubleshoot-connection">PMM Server/PMM Client connection<a class="headerlink" href="#troubleshoot-connection" title="Permanent link">&para;</a></h2>
+<p>Broken network connectivity may be due to many reasons.  Particularly, when <a href="../setting-up/server/docker.html">using Docker</a>, the container is constrained by the host-level routing and firewall rules. For example, your hosting provider might have default <code>iptables</code> rules on their hosts that block communication between PMM Server and PMM Client, resulting in <em>DOWN</em> targets in VictoriaMetrics. If this happens, check the firewall and routing settings on the Docker host.</p>
+<p>PMM is also able to generate diagnostics data which can be examined and/or shared with our support team to help quickly solve an issue. You can get collected logs from PMM Client using the <code>pmm-admin summary</code> command.</p>
+<p>Logs obtained in this way includes PMM Client logs and logs which were received from the PMM Server, stored separately in the <code>client</code> and <code>server</code> folders. The <code>server</code> folder also contains its own <code>client</code> subfolder with the self-monitoring client information collected on the PMM Server.</p>
+<p>Beginning with PMM version 2.4.0, there is an additional flag that enables the fetching of <a href="https://github.com/google/pprof"><code>pprof</code></a> debug profiles and adds them to the diagnostics data. To enable, run <code>pmm-admin summary --pprof</code>.</p>
+<p>You can get PMM Server logs in two ways:</p>
+<ul>
+<li>In a browser, visit <code>https://&lt;address-of-your-pmm-server&gt;/logs.zip</code>.</li>
+<li>Go to <em>PMM &gt; PMM Settings</em> and click <em>Download server diagnostics</em>. (See <a href="configure.html#diagnostics">Diagnostics in PMM Settings</a>.)</li>
+</ul>
+<h2 id="connection-difficulties">Connection difficulties<a class="headerlink" href="#connection-difficulties" title="Permanent link">&para;</a></h2>
+<h3 id="passwords">Passwords<a class="headerlink" href="#passwords" title="Permanent link">&para;</a></h3>
+<p>When adding a service, the host might not be detected correctly if the password contains special symbols (e.g. <code>@</code>, <code>%</code>, etc.).</p>
+<p>In such cases, you should convert any password, replacing special characters with their escape sequence equivalents.</p>
+<p>One way to do this is to use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent"><code>encodeURIComponent</code></a> JavaScript function in your browser&rsquo;s web console (usually found under <em>Development Tools</em>). Evaluate the function with your password as the parameter. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span> <span class="nb">encodeURIComponent</span><span class="p">(</span><span class="s2">&quot;s3cR#tpa$$worD&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>will give:</p>
+<div class="highlight"><pre><span></span><code>&quot;s3cR%23tpa%24%24worD&quot;
+</code></pre></div>
+<h2 id="integrated-alerting">Integrated Alerting<a class="headerlink" href="#integrated-alerting" title="Permanent link">&para;</a></h2>
+<h3 id="no-integrated-alerting-icon">No <i class="uil uil-bell"></i> Integrated Alerting icon<a class="headerlink" href="#no-integrated-alerting-icon" title="Permanent link">&para;</a></h3>
+<p>You are not logged in as a privileged user. You need either Admin or Editor roles to work with Integrated Alerting.</p>
+<h3 id="integrated-alerting-icon-but-no-submenu"><i class="uil uil-bell"></i> Integrated Alerting icon but no submenu<a class="headerlink" href="#integrated-alerting-icon-but-no-submenu" title="Permanent link">&para;</a></h3>
+<p>Integrated Alerting isn&rsquo;t activated.</p>
+<ol>
+<li>Go to PMM &rarr; PMM Settings &rarr; Advanced Settings</li>
+<li>Enable Integrated Alerting</li>
+</ol>
+<h3 id="unreachable-external-ip-addresses">Unreachable external IP addresses<a class="headerlink" href="#unreachable-external-ip-addresses" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>When I get an email or page from my system the IP is not reachable from outside my organization how do I fix this?</p>
+</blockquote>
+<p>You can configure your PMM Server’s Public Address by navigating to PMM &rarr; PMM Settings &rarr; Advanced Settings, and supply an address to use in your alert notifications.</p>
+<h3 id="what-is-alertmanager-integration">What is &lsquo;Alertmanager integration&rsquo;?<a class="headerlink" href="#what-is-alertmanager-integration" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>There’s already an Alertmanager integration tab without me turning it on, I know because I was using your existing Alertmanager integration.</p>
+</blockquote>
+<p>This will continue to work but will be renamed <em>External Alertmanager</em>.</p>
+<h3 id="notification-channels-not-working">Notification channels not working<a class="headerlink" href="#notification-channels-not-working" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>I tried to setup a Slack/Email channel but nothing happened</p>
+</blockquote>
+<p>Before you can use a notification channel you must provide your connection details.</p>
+<ol>
+<li>Go to PMM &rarr; PMM Settings&rarr; Communication</li>
+<li>Define your SMTP server or Slack incoming webhook URL</li>
+</ol>
+<p>For PagerDuty you can configure in the notification channel tab of Integrated Alerting by supplying your server/routing key.</p>
+<h3 id="whats-the-difference-usernamepassword-vs-identitysecret">What&rsquo;s the difference: Username/Password vs Identity/Secret<a class="headerlink" href="#whats-the-difference-usernamepassword-vs-identitysecret" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>In configuring my email server I’m being asked for a Username and Password as well as Identity and Secret. What is the difference between these and which do I use or do I need both?</p>
+</blockquote>
+<p>It depends on what kind of authentication your system uses:</p>
+<ul>
+<li>LOGIN: Use Username/Password</li>
+<li>PLAIN: Use either Username or Identity and Password</li>
+<li>CRAM-MD5: Use Username and Secret</li>
+</ul>
+<h3 id="alert-rule-templates-is-disabled">Alert Rule Templates is disabled<a class="headerlink" href="#alert-rule-templates-is-disabled" title="Permanent link">&para;</a></h3>
+<p>Built-In alerts are not editable.</p>
+<p>However, you can copy them and edit the copies. (PMM &gt;=2.14.0).</p>
+<p>If you create a custom alert rule template you will have access to edit.</p>
+<h3 id="creating-rules">Creating rules<a class="headerlink" href="#creating-rules" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>I’m ready to create my first rule!  I’ve chosen a template and given it a name&hellip;what is the format of the fields?</p>
+</blockquote>
+<ul>
+<li>
+<p>Threshold - float value, it has different meanings depending on what template is used</p>
+</li>
+<li>
+<p>Duration - The duration the condition must be satisfied in seconds</p>
+</li>
+<li>
+<p>Filters - A Key, Evaluator, and Value. E.g. <code>service_name=ps5.7</code></p>
+<ul>
+<li>
+<p>Key must be an exact match. You can find a complete list of keys by using the <i class="uil uil-compass"></i><em>Explore</em> main menu item in PMM</p>
+</li>
+<li>
+<p>Evaluator can be any of: <code>=</code>, <code>=~</code></p>
+</li>
+<li>
+<p>Value is an exact match or when used with a ‘fuzzy’ evaluator (=~) can be a regular expression. E.g. <code>service_name=~ps.*</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="variables-in-templates">Variables in Templates<a class="headerlink" href="#variables-in-templates" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>The concept of “template” implies things like variable substitutions&hellip;where can I use these? Where can I find a complete list of them?</p>
+</blockquote>
+<p>Here is a guide to creating templates for Alertmanager: <a href="https://prometheus.io/docs/prometheus/latest/configuration/template_examples/">https://prometheus.io/docs/prometheus/latest/configuration/template_examples/</a></p>
                 
                   
                     
