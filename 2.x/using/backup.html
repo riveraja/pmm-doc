@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#backup-and-restore" class="md-skip">
+        <a href="#macro-rendering-error" class="md-skip">
           Skip to content
         </a>
       
@@ -618,65 +618,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          <span class="md-nav__icon md-icon"></span>
-          
-            <a href="backup.html" class="md-nav__link md-nav__link--active"
-              style="margin: initial; padding: initial; pointer-events: initial">
-          
-            Backup and Restore
-          </a>
-        </label>
-      
       <a href="backup.html" class="md-nav__link md-nav__link--active">
         Backup and Restore
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#before-you-start" class="md-nav__link">
-    Before you start
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backup-location" class="md-nav__link">
-    Adding a storage location
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backup-create" class="md-nav__link">
-    Creating a backup
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backup-restore" class="md-nav__link">
-    Restoring a backup
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2268,42 +2212,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#before-you-start" class="md-nav__link">
-    Before you start
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backup-location" class="md-nav__link">
-    Adding a storage location
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backup-create" class="md-nav__link">
-    Creating a backup
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#backup-restore" class="md-nav__link">
-    Restoring a backup
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2319,124 +2227,20 @@
                   </a>
                 
                 
-                <h1 id="backup-and-restore">Backup and Restore<a class="headerlink" href="#backup-and-restore" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p><b style="color:goldenrod">Caution</b> Backup and restore features are a technical preview and currently only work with MySQL database servers backing up to Amazon AWS S3 storage locations.</p>
-</blockquote>
-<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">&para;</a></h2>
-<ul>
-<li>You have an AWS S3 storage account and location details for it.</li>
-<li>There is only one MySQL instance running on the node.</li>
-<li>MySQL is running:<ul>
-<li>as a service via <code>systemd</code>;</li>
-<li>with the name <code>mysql</code> (to confirm, use <code>systemctl status mysql</code>);</li>
-<li>from a <code>mysql</code> system user account.</li>
-</ul>
-</li>
-<li>There is a <code>mysql</code> system group.</li>
-<li>MySQL is using the <code>/var/lib/mysql</code> directory for database storage.</li>
-<li>
-<p>Backup management has been enabled:</p>
-<ol>
-<li>Navigate to <em><i class="uil uil-cog"></i> Configuration&rarr;Settings&rarr;Advanced Settings</em>.</li>
-<li>Activate <em>Backup Management</em>.</li>
-<li>Click <em>Apply changes</em>.</li>
-<li>
-<p>In the left menu bar, click <em><i class="uil uil-history"></i>&rarr;Backup</em>.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_Backup_Management.jpg"><img alt="" src="../_images/PMM_Backup_Management.jpg" /></a></div></p>
-</li>
-</ol>
-</li>
-<li>
-<p>The following packages are needed for creating backups. They should be included in the <code>$PATH</code> environment variable:</p>
-<ul>
-<li><a href="https://www.percona.com/software/mysql-database/percona-xtrabackup">xtrabackup</a>, which includes:<ul>
-<li><a href="https://www.percona.com/doc/percona-xtrabackup/2.3/xbcloud/xbcloud.html"><code>xbcloud</code></a>;</li>
-<li><a href="https://www.percona.com/doc/percona-xtrabackup/2.3/xbstream/xbstream.html"><code>xbstream</code></a>;</li>
-</ul>
-</li>
-<li><a href="https://www.percona.com/doc/percona-xtrabackup/LATEST/backup_scenarios/compressed_backup.html"><code>qpress</code></a>.</li>
-</ul>
-<p><strong>The versions of each must be compatible with the installed version of MySQL.</strong></p>
-</li>
-</ul>
-<h2 id="backup-location">Adding a storage location<a class="headerlink" href="#backup-location" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Navigate to Backup Management&rarr;Storage locations.</li>
-<li>Click <em>Add</em>.</li>
-<li>
-<p>Fill in the form fields.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_Backup_Management_Locations_Add_Storage_Location.jpg"><img alt="" src="../_images/PMM_Backup_Management_Locations_Add_Storage_Location.jpg" /></a></div></p>
-<ul>
-<li><em>Name</em>:</li>
-<li><em>Description</em>:</li>
-<li><em>Type:</em><ul>
-<li><em>S3</em>:</li>
-<li><em>Local Client:</em> (Not currently implemented)</li>
-<li><em>Local Server:</em> (Not currently implemented)</li>
-</ul>
-</li>
-<li><em>Endpoint:</em></li>
-<li><em>Bucket Name:</em></li>
-<li><em>Access Key:</em></li>
-<li><em>Secret Key:</em></li>
-</ul>
-</li>
-<li>
-<p>Click <em>Add</em> to add the location or <em>Test</em> to test the connection.</p>
-</li>
-</ol>
-<h2 id="backup-create">Creating a backup<a class="headerlink" href="#backup-create" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>You must add a <a href="#backup-location">backup storage location</a> before backing up.</p>
-</blockquote>
-<ol>
-<li>
-<p>Navigate to <em>Backup Management&rarr;Backup Inventory</em>.</p>
-</li>
-<li>
-<p>Click <i class="uil uil-plus-square"></i> Add.</p>
-</li>
-<li>
-<p>In the <em>Backup On Demand</em> dialog, enter values for:</p>
-<ul>
-<li><em>Service name</em> &ndash; The service being backed up.</li>
-<li><em>Backup name</em> &ndash; A unique name for the backup.</li>
-<li><em>Description</em> &ndash; A long description.</li>
-<li><em>Location</em> &ndash; The predefined storage location.</li>
-</ul>
-<blockquote>
-<p><em>Vendor</em> is a read-only value showing the database vendor name. (Currently only for the supported MySQL service.)</p>
-</blockquote>
-</li>
-<li>
-<p>Click <em>Backup</em>.</p>
-</li>
-<li>
-<p>In the <em>Backup Inventory</em> pane, watch the <em>Status</em> column.</p>
-</li>
-</ol>
-<h2 id="backup-restore">Restoring a backup<a class="headerlink" href="#backup-restore" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>For this release, you can only restore a backup to the same service. I.e. a MySQL backup of service <code>mymsql-service-1</code> can only be restored to a MySQL database server registered with the same service name. Future releases will give more flexibility to restore backups to other service types.</p>
-</blockquote>
-<ol>
-<li>
-<p>Navigate to <em>Backup Management&rarr;Backup Inventory</em></p>
-</li>
-<li>
-<p>Find the row with the backup you want to restore.</p>
-</li>
-<li>
-<p>In the <em>Actions</em> column for that row, click <em>Restore from backup</em></p>
-</li>
-<li>
-<p>In the <em>Restore from backup</em> dialog, check the values and click <em>Restore</em></p>
-</li>
-<li>
-<p>Navigate to the <em>Restore History</em> tab to check the status of the restored backup</p>
-</li>
-</ol>
+                <h1 id="macro-rendering-error"><em>Macro Rendering Error</em><a class="headerlink" href="#macro-rendering-error" title="Permanent link">&para;</a></h1>
+<p><strong>UndefinedError</strong>: &lsquo;icon&rsquo; is undefined</p>
+<div class="highlight"><pre><span></span><code>Traceback (most recent call last):
+  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/mkdocs_macros/plugin.py&quot;, line 443, in render
+    return md_template.render(**page_variables)
+  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 1304, in render
+    self.environment.handle_exception()
+  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File &quot;&lt;template&gt;&quot;, line 17, in top-level template code
+  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: &#39;icon&#39; is undefined
+</code></pre></div>
                 
                   
                     

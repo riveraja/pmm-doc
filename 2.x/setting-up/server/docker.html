@@ -2416,7 +2416,7 @@
                 
                 
                 <h1 id="docker_1">Docker<a class="headerlink" href="#docker_1" title="Permanent link">&para;</a></h1>
-<p>We maintain a <a href="https://hub.docker.com/r/percona/pmm-server">Docker image for PMM Server</a>. This section shows how to run PMM Server as a Docker container, directly and with <a href="#docker-compose">Docker compose</a>. (The tags used here are for the latest version of PMM 2 (2.18.0). <a href="https://hub.docker.com/r/percona/pmm-server/tags">Other tags are available</a>.)</p>
+<p>We maintain a <a href="https://hub.docker.com/r/percona/pmm-server">Docker image for PMM Server</a>. This section shows how to run PMM Server as a Docker container, directly and with <a href="#docker-compose">Docker compose</a>. (The tags used here are for the latest version of PMM 2 (). <a href="https://hub.docker.com/r/percona/pmm-server/tags">Other tags are available</a>.)</p>
 <h2 id="system-requirements">System requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h2>
 <p><strong>Software</strong></p>
 <ul>
@@ -2709,8 +2709,8 @@ docker run --rm --volumes-from pmm-data -it percona/pmm-server:2 chown -R postgr
 <ol>
 <li>
 <p>On an internet-connected host, download the Docker image and its checksum file.</p>
-<div class="highlight"><pre><span></span><code>wget https://downloads.percona.com/downloads/pmm2/2.18.0/docker/pmm-server-2.18.0.docker
-wget https://downloads.percona.com/downloads/pmm2/2.18.0/docker/pmm-server-2.18.0.sha256sum
+<div class="highlight"><pre><span></span><code>wget https://downloads.percona.com/downloads/pmm2//docker/pmm-server-.docker
+wget https://downloads.percona.com/downloads/pmm2//docker/pmm-server-.sha256sum
 </code></pre></div>
 </li>
 <li>
@@ -2721,18 +2721,18 @@ wget https://downloads.percona.com/downloads/pmm2/2.18.0/docker/pmm-server-2.18.
 </li>
 <li>
 <p>(Optional) Check the Docker image file integrity.</p>
-<div class="highlight"><pre><span></span><code>shasum -ca <span class="m">256</span> pmm-server-2.18.0.sha256sum
+<div class="highlight"><pre><span></span><code>shasum -ca <span class="m">256</span> pmm-server-.sha256sum
 </code></pre></div>
 </li>
 <li>
 <p>Load the image.</p>
-<div class="highlight"><pre><span></span><code>docker load -i pmm-server-2.18.0.docker
+<div class="highlight"><pre><span></span><code>docker load -i pmm-server-.docker
 </code></pre></div>
 </li>
 <li>
 <p>Create the <code>pmm-data</code> persistent data container.</p>
 <div class="highlight"><pre><span></span><code>docker create --volume /srv <span class="se">\</span>
---name pmm-data percona/pmm-server:2.18.0 /bin/true
+--name pmm-data percona/pmm-server: /bin/true
 </code></pre></div>
 </li>
 <li>
@@ -2743,7 +2743,7 @@ wget https://downloads.percona.com/downloads/pmm2/2.18.0/docker/pmm-server-2.18.
 --publish <span class="m">443</span>:443 <span class="se">\</span>
 --volumes-from pmm-data <span class="se">\</span>
 --name pmm-server <span class="se">\</span>
-percona/pmm-server:2.18.0
+percona/pmm-server:
 </code></pre></div>
 </li>
 </ol>

@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#security-threat-tool" class="md-skip">
+        <a href="#macro-rendering-error" class="md-skip">
           Skip to content
         </a>
       
@@ -675,58 +675,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          <span class="md-nav__icon md-icon"></span>
-          
-            <a href="security-threat-tool.html" class="md-nav__link md-nav__link--active"
-              style="margin: initial; padding: initial; pointer-events: initial">
-          
-            Security Threat Tool
-          </a>
-        </label>
-      
       <a href="security-threat-tool.html" class="md-nav__link md-nav__link--active">
         Security Threat Tool
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-enable" class="md-nav__link">
-    How to enable
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-a-checks-interval" class="md-nav__link">
-    Change a check's interval
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#list-of-checks-made" class="md-nav__link">
-    List of checks made
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -2263,35 +2214,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-enable" class="md-nav__link">
-    How to enable
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#change-a-checks-interval" class="md-nav__link">
-    Change a check's interval
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#list-of-checks-made" class="md-nav__link">
-    List of checks made
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2307,83 +2229,20 @@
                   </a>
                 
                 
-                <h1 id="security-threat-tool">Security Threat Tool<a class="headerlink" href="#security-threat-tool" title="Permanent link">&para;</a></h1>
-<p>The Security Threat Tool runs regular checks against connected databases, alerting you if any servers pose a potential security threat.</p>
-<p>All checks run on the PMM Client side. Results are sent to PMM Server where a summary count is shown on the <em>Home Dashboard</em>, with details in the <em>PMM Database Checks</em> dashboard.</p>
-<p>Checks are automatically downloaded from Percona Platform and run every 24 hours. (This period is not configurable.)</p>
-<p><strong>Check results data <em>always</em> remains on the PMM Server.</strong> It is not related to anonymous data sent for Telemetry purposes.</p>
-<p>The <em>Failed security checks</em> panel on the <em>Home Dashboard</em> shows the number of failed checks classed as <em>critical</em> (red), <em>major</em> (amber), and <em>trivial</em> (blue).</p>
-<p><div class="lightgallery"><a data-sub-html="Failed security checks panel" href="../../_images/PMM_Home_Dashboard_Panels_Failed_Security_Checks.jpg"><img alt="Failed security checks panel" src="../../_images/PMM_Home_Dashboard_Panels_Failed_Security_Checks.jpg" /></a></div></p>
-<blockquote>
-<p><strong>Key</strong></p>
-<p><b style="color:#e02f44;">Critical</b> / <b style="color:#e36526;">Major</b> / <b style="color:#5794f2;">Trivial</b></p>
-</blockquote>
-<p>Details are in the <em>PMM Database Checks</em> dashboard (select <em>PMM&rarr;PMM Database Checks</em>).</p>
-<p><div class="lightgallery"><a data-sub-html="PMM Database Checks dashboard" href="../../_images/PMM_Database_Checks.jpg"><img alt="PMM Database Checks dashboard" src="../../_images/PMM_Database_Checks.jpg" /></a></div></p>
-<h2 id="how-to-enable">How to enable<a class="headerlink" href="#how-to-enable" title="Permanent link">&para;</a></h2>
-<p>The Security Threat Tool (STT) is disabled by default. Enable it in <a href="../../how-to/configure.html#advanced-settings"><em>PMM Settings&rarr;Advanced Settings</em></a>.</p>
-<p>Enabling STT in the settings also causes the PMM server to download STT checks from Percona Platform and run them once. This operation runs in the background so even though the settings update finishes instantly it might take some time for the checks to complete download and execution and the results (if any) to be visible in the <em>PMM Database Checks</em> dashboard.</p>
-<h2 id="change-a-checks-interval">Change a check&rsquo;s interval<a class="headerlink" href="#change-a-checks-interval" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>Navigate to <em>PMM&rarr;PMM Database Checks</em></p>
-</li>
-<li>
-<p>Activate the <em>All Checks</em> tab</p>
-</li>
-<li>
-<p>In the <em>Actions</em> column for a chosen check, click the <i class="uil uil-history"></i> <em>Interval</em> icon</p>
-</li>
-<li>
-<p>Chose an interval from the options</p>
-</li>
-<li>
-<p>Click <em>Save</em></p>
-</li>
-</ol>
-<h2 id="list-of-checks-made">List of checks made<a class="headerlink" href="#list-of-checks-made" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Check ID</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>mongodb_auth</code></td>
-<td>MongoDB authentication is disabled</td>
-</tr>
-<tr>
-<td><code>mongodb_version</code></td>
-<td>MongoDB/Percona Server for MongoDB version is not the latest</td>
-</tr>
-<tr>
-<td><code>mongodb_cve_version</code></td>
-<td>MongoDB/Percona Server for MongoDB version is not the latest with CVE fixes</td>
-</tr>
-<tr>
-<td><code>mysql_anonymous_users</code></td>
-<td>There are accounts with no username</td>
-</tr>
-<tr>
-<td><code>mysql_empty_password</code></td>
-<td>There are users without passwords</td>
-</tr>
-<tr>
-<td><code>mysql_version</code></td>
-<td>MySQL/PS/MariaDB version is not the latest</td>
-</tr>
-<tr>
-<td><code>postgresql_super_role</code></td>
-<td>PostgreSQL has users (besides <code>postgres</code>, <code>rdsadmin</code>, and <code>pmm_user</code>) with the role &lsquo;SUPER&rsquo;</td>
-</tr>
-<tr>
-<td><code>postgresql_version</code></td>
-<td>PostgreSQL version is not the latest</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="macro-rendering-error"><em>Macro Rendering Error</em><a class="headerlink" href="#macro-rendering-error" title="Permanent link">&para;</a></h1>
+<p><strong>UndefinedError</strong>: &lsquo;icon&rsquo; is undefined</p>
+<div class="highlight"><pre><span></span><code>Traceback (most recent call last):
+  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/mkdocs_macros/plugin.py&quot;, line 443, in render
+    return md_template.render(**page_variables)
+  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 1304, in render
+    self.environment.handle_exception()
+  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File &quot;&lt;template&gt;&quot;, line 36, in top-level template code
+  File &quot;/opt/hostedtoolcache/Python/3.9.5/x64/lib/python3.9/site-packages/jinja2/environment.py&quot;, line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: &#39;icon&#39; is undefined
+</code></pre></div>
                 
                   
                     
