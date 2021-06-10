@@ -860,18 +860,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-to/backup.html" class="md-nav__link">
-        Backup
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../how-to/render-dashboard-images.html" class="md-nav__link">
         Render dashboard images
       </a>
@@ -2339,7 +2327,7 @@
 <li>
 <p>Backup management has been enabled:</p>
 <ol>
-<li>Navigate to <em><i class="uil uil-cog"></i> Configuration&rarr;Settings&rarr;Advanced Settings</em>.</li>
+<li>Select <em><i class="uil uil-cog"></i> Configuration&rarr;<i class="uil uil-setting"></i> Settings&rarr;Advanced Settings</em>.</li>
 <li>Activate <em>Backup Management</em>.</li>
 <li>Click <em>Apply changes</em>.</li>
 <li>
@@ -2388,9 +2376,10 @@
 </li>
 </ol>
 <h2 id="backup-create">Creating a backup<a class="headerlink" href="#backup-create" title="Permanent link">&para;</a></h2>
-<blockquote>
+<div class="admonition tip alert alert-success">
+<p class="admonition-title">Tip</p>
 <p>You must add a <a href="#backup-location">backup storage location</a> before backing up.</p>
-</blockquote>
+</div>
 <ol>
 <li>
 <p>Navigate to <em>Backup Management&rarr;Backup Inventory</em>.</p>
@@ -2418,9 +2407,9 @@
 </li>
 </ol>
 <h2 id="backup-restore">Restoring a backup<a class="headerlink" href="#backup-restore" title="Permanent link">&para;</a></h2>
-<blockquote>
+<div class="admonition note alert alert-primary">
 <p>For this release, you can only restore a backup to the same service. I.e. a MySQL backup of service <code>mymsql-service-1</code> can only be restored to a MySQL database server registered with the same service name. Future releases will give more flexibility to restore backups to other service types.</p>
-</blockquote>
+</div>
 <ol>
 <li>
 <p>Navigate to <em>Backup Management&rarr;Backup Inventory</em></p>

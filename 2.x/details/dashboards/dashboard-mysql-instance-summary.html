@@ -792,18 +792,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how-to/backup.html" class="md-nav__link">
-        Backup
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../how-to/render-dashboard-images.html" class="md-nav__link">
         Render dashboard images
       </a>
@@ -2639,9 +2627,10 @@
 <li><code>query_cache_type=0</code></li>
 <li><code>query_cache_size=0</code></li>
 </ul>
-<blockquote>
+<div class="admonition tip alert alert-success">
+<p class="admonition-title">Tip</p>
 <p>While you can dynamically change these values, to completely remove the contention point you have to restart the database.</p>
-</blockquote>
+</div>
 <h2 id="mysql-query-cache-activity">MySQL Query Cache Activity<a class="headerlink" href="#mysql-query-cache-activity" title="Permanent link">&para;</a></h2>
 <p><strong>MySQL Query Cache Activity</strong></p>
 <p>The query cache has huge scalability problems in that only one thread can do an operation in the query cache at the same time. This serialization is true not only for SELECTs, but also for INSERT/UPDATE/DELETE.</p>
@@ -2651,9 +2640,10 @@
 <li><code>query_cache_type=0</code></li>
 <li><code>query_cache_size=0</code></li>
 </ul>
-<blockquote>
+<div class="admonition tip alert alert-success">
+<p class="admonition-title">Tip</p>
 <p>While you can dynamically change these values, to completely remove the contention point you have to restart the database.</p>
-</blockquote>
+</div>
 <h2 id="mysql-table-open-cache-status">MySQL Table Open Cache Status<a class="headerlink" href="#mysql-table-open-cache-status" title="Permanent link">&para;</a></h2>
 <p><strong>MySQL Table Open Cache Status</strong></p>
 <p>The recommendation is to set the <code>table_open_cache_instances</code> to a loose correlation to virtual CPUs, keeping in mind that more instances means the cache is split more times. If you have a cache set to 500 but it has 10 instances, each cache will only have 50 cached.</p>
@@ -2674,7 +2664,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-05-11
+      Last update: 2021-06-10
     
   </small>
 </div>
