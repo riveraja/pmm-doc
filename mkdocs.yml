@@ -59,25 +59,24 @@ markdown_extensions:
 
 plugins:
     - search
-    - git-revision-date
-    - macros:
-        include_yaml:
-            - variables.yml
-    # https://pypi.org/project/mkdocs-exclude/
-    - exclude:
-        glob:
-          - 'setting-up/client/docker.md'
-    - mike:
-        version_selector: true
-        css_dir: css
-        javascript_dir: js
-        canonical_version: null
-    - section-index
     - i18n:
         default_language: en
         languages:
-          en: English
-          ot: Other
+          fr: French
+    - git-revision-date
+    - macros:
+        include_yaml:
+          - variables.yml
+    # https://pypi.org/project/mkdocs-exclude/
+#    - exclude:
+#        glob:
+#          - 'setting-up/client/docker.md'
+#    - mike:
+#        version_selector: true
+#        css_dir: css
+#        javascript_dir: js
+#        canonical_version: null
+#    - section-index
 
 extra: # Used in main.html template and can't be externalised
     open_issue_text: '<i class="uil uil-exclamation-triangle"></i> Report a problem
