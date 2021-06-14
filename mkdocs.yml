@@ -59,24 +59,32 @@ markdown_extensions:
 
 plugins:
     - search
+    - git-revision-date
     - i18n:
         default_language: en
         languages:
-          fr: French
-    - git-revision-date
-    - macros:
-        include_yaml:
-          - variables.yml
+          en: English
+          es: Español
+          fr: Française
+        nav_translations:
+          fr:
+            Welcome: Bienvenue
+            Setting up: Configurer
+            How to: Comment
+            Details: Détails
     # https://pypi.org/project/mkdocs-exclude/
 #    - exclude:
 #        glob:
 #          - 'setting-up/client/docker.md'
-#    - mike:
-#        version_selector: true
-#        css_dir: css
-#        javascript_dir: js
-#        canonical_version: null
-#    - section-index
+    - mike:
+        version_selector: true
+        css_dir: css
+        javascript_dir: js
+        canonical_version: null
+    - macros:
+        include_yaml:
+          - variables.yml
+#    - section-index # Clashes with i18n plugin
 
 extra: # Used in main.html template and can't be externalised
     open_issue_text: '<i class="uil uil-exclamation-triangle"></i> Report a problem

@@ -33,6 +33,7 @@ A minimal PMM set-up comprises one [server](details/architecture.md#pmm-server) 
 
 ## Read more
 
+<!--
 
 ```plantuml format="svg_object" width="90%" height="90%"
 @startmindmap ""
@@ -53,8 +54,6 @@ mindmapDiagram {
 ' Absolute links - can be useful for exporting map as stand-alone image
 ' relative links make testing easier but must be changed for local vs hosting
 !$base = "https://www.percona.com/doc/percona-monitoring-and-management/2.x"
-'!$base = "../2.x"
-'!$base = "."
 +[#goldenrod] For Sys Admins <&star> <<admin>>
 --_ [[$base/setting-up/ Setting up]]
 --_ [[$base/how-to/configure.html How to configure]]
@@ -69,6 +68,11 @@ mindmapDiagram {
 +++_ [[$base/details/dashboards/ Dashboards reference]]
 @endmindmap
 ```
+-->
+
+
+
+<!--
 
 ??? note alert alert-info "Full section map (click to show/hide)"
 
@@ -87,11 +91,9 @@ mindmapDiagram {
       }
     }
     </style>
-    ' Absolute links - can be useful for exporting map as stand-alone image
-    ' relative links make testing easier but must be changed for local vs hosting' Hosted
-    !$base = "https://www.percona.com/doc/percona-monitoring-and-management/2.x"
-    '!$base = "../2.x"
-    ' !$base = ".."
+' Absolute links - can be useful for exporting map as stand-alone image
+' relative links make testing easier but must be changed for local vs hosting' Hosted
+!$base = "https://www.percona.com/doc/percona-monitoring-and-management/2.x"
 + <&home> [[$base/index.html Welcome]]
 ++ <&power-standby> [[$base/setting-up/ Setting up]]
 --- <&heart> [[$base/setting-up/server/ Server]]
@@ -145,6 +147,8 @@ mindmapDiagram {
 +++_ [[$base/details/glossary.html Glossary]]
     @endwbs
     ```
+-->
+
 
 [PERCONA_SERVICES]: https://www.percona.com/services
 [community]: https://www.percona.com/forums/questions-discussions/percona-monitoring-and-management

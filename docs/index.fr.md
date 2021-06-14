@@ -1,3 +1,9 @@
-# Welcome in another language
+# Bienvenue
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu sapien vitae nisl auctor maximus. Quisque eu auctor diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam vitae turpis feugiat, efficitur tortor nec, mattis nisi. Nulla interdum felis eu sapien vehicula, ac posuere nisl rhoncus. Maecenas ornare enim nulla, a sagittis magna ornare et. Sed mauris tellus, egestas quis nisl ut, pretium vulputate risus. Nunc id enim interdum, sodales nunc tincidunt, aliquet felis. Suspendisse vestibulum pellentesque lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+**Percona Monitoring and Management** (PMM) est un outil de surveillance gratuit et open source pour MySQL, PostgreSQL, MongoDB et ProxySQL, ainsi que les serveurs sur lesquels ils s'exécutent.
+
+- PMM **collecte** des milliers de **métriques** de performances prêtes à l'emploi à partir des bases de données et de leurs hôtes.
+
+- Le PMM [web UI](using/interface.md) **visualise les données** dans [dashboards](details/dashboards/).
+
+- Les fonctionnalités supplémentaires incluent la vérification des bases de données pour les [menaces de sécurité](using/platform/security-threat-tool.md).

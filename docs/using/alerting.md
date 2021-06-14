@@ -1,3 +1,8 @@
+---
+# YAML header
+ignore_macros: true
+---
+
 # Integrated Alerting
 
 !!! caution alert alert-warning "Caution"
@@ -134,8 +139,7 @@ This page has four tabs.
 
 3. Enter a template in the *Alert Rule Template* text box.
 
-    ```
-    {% raw %}
+    ```yml
     ---
     templates:
         - name: mysql_too_many_connections
@@ -146,7 +150,7 @@ This page has four tabs.
             max_over_time(mysql_global_status_threads_connected[5m]) / ignoring (job)
             mysql_global_variables_max_connections
             * 100
-            > [[ .threshold ]]
+            > {{ extra.ALERT_TEMPLATE_THRESHOLD }}
           params:
             - name: threshold
               summary: A percentage from configured maximum
@@ -160,17 +164,16 @@ This page has four tabs.
             foo: bar
           annotations:
             description: |-
-                More than [[ .threshold ]]% of MySQL connections are in use on {{ $labels.instance }}
-                VALUE = {{ $value }}
-                LABELS: {{ $labels }}
-            summary: MySQL too many connections (instance {{ $labels.instance }})
+                More than {{ extra.ALERT_TEMPLATE_THRESHOLD }}% of MySQL connections are in use on {{ extra.ALERT_TEMPLATE_INSTANCE }}
+                VALUE = {{ extra.ALERT_TEMPLATE_VALUE }}
+                LABELS: {{ extra.ALERT_TEMPLATE_LABELS }}
+            summary: {{ extra.ALERT_TEMPLATE_SUMMARY }}
     ```
-    {% endraw %}
+
 
     ![!](../_images/PMM_Integrated_Alerting_Alert_Rule_Templates_Add_Form.jpg)
 
-    !!! note alert alert-primary ""
-        **Alert Rule Template parameters**
+    !!! note alert alert-primary "Alert Rule Template parameters"
 
         The parameters used in the template follow a format and might include different fields depending on their `type`:
 

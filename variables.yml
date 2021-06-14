@@ -9,13 +9,21 @@ op:
 extra:
   # Link to AWS Marketplace for PMM Server
   server_aws: 'https://aws.amazon.com/marketplace/pp/B077J7FYGX'
-  # Code block includes
-  STATE_HEALTH_STATUS: '{{.State.Health.Status}}' # Docker variables in code breaks MkDocs macros extension
+
+
+  # Used in using/alerting.md to avoid Jinja errors
+  ALERT_TEMPLATE_VALUE: '{{ $value }}'
+  ALERT_TEMPLATE_LABELS: '{{ $labels }}'
+  ALERT_TEMPLATE_SUMMARY: 'MySQL too many connections (instance {{ $labels.instance }})'
+  ALERT_TEMPLATE_INSTANCE: '{{ $labels.instance }}'
+  ALERT_TEMPLATE_THRESHOLD: '[[ threshold ]]'
+#  ALERT_TEMPLATE_THRESHOLD: '[[ .threshold ]]'
+
   # Used in Setting Up/Client pages
-  'pmm_password': 'password'  #'s3cR#tpa$$worD'
+  'pmm_password': 'password'
   'pmm_mongodb_user': 'pmm_mongodb'
 
-# Icons, use in markdown as {{ icon.<name> }}
+# Icons, use in markdown as {{icon.<name>}}
 # For Grafana icons (uil-), goto https://iconscout.com/unicons/explore/line, find an icon, select 'Font' and copy the code here.
 # For Font Awesome (fa-), goto https://fontawesome.com/icons, find an icon, copy the code.
 # For the Percona image icon (encoded inline SVG), see https://css-tricks.com/using-svg/
