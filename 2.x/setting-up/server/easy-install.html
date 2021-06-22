@@ -373,9 +373,51 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-nav__icon md-icon"></span>
+          
+            <a href="easy-install.html" class="md-nav__link md-nav__link--active"
+              style="margin: initial; padding: initial; pointer-events: initial">
+          
+            Easy-install script
+          </a>
+        </label>
+      
       <a href="easy-install.html" class="md-nav__link md-nav__link--active">
         Easy-install script
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    MacOS
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2218,6 +2260,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    MacOS
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2241,15 +2305,29 @@
 <li>Download and check <code>get-pmm2.sh</code> before running it to make sure you know what it does.</li>
 </ul>
 </div>
-<div class="highlight"><pre><span></span><code>curl -fsSL https://raw.githubusercontent.com/percona/pmm/PMM-2.0/get-pmm.sh -o get-pmm2.sh <span class="o">&amp;&amp;</span> <span class="se">\</span>
-chmod +x get-pmm2.sh <span class="o">&amp;&amp;</span> <span class="se">\</span>
-./get-pmm2.sh
+<h2 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>curl -fsSL -O https://raw.githubusercontent.com/percona/pmm/PMM-2.0/get-pmm.sh -O https://raw.githubusercontent.com/percona/pmm/PMM-2.0/.sha256-oneline <span class="o">&amp;&amp;</span> <span class="se">\</span>
+sha256sum .sha256-oneline -c <span class="o">&amp;&amp;</span> <span class="se">\</span>
+chmod +x ./get-pmm.sh <span class="o">&amp;&amp;</span> <span class="se">\</span>
+./get-pmm.sh
+</code></pre></div>
+<h2 id="macos">MacOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>curl -fsSL -O https://raw.githubusercontent.com/percona/pmm/PMM-2.0/get-pmm.sh -O https://raw.githubusercontent.com/percona/pmm/PMM-2.0/.sha256-oneline <span class="o">&amp;&amp;</span> <span class="se">\</span>
+shasum .sha256-oneline -c <span class="o">&amp;&amp;</span> <span class="se">\</span>
+chmod +x ./get-pmm.sh <span class="o">&amp;&amp;</span> <span class="se">\</span>
+./get-pmm.sh
 </code></pre></div>
 <p>These commands:</p>
 <ul>
+<li>Download the script;</li>
+<li>Check its integrity;</li>
+<li>Make the script executable;</li>
+<li>Run it. The script will:<ul>
 <li>install Docker if not already installed;</li>
 <li>if there is a PMM Server docker container running, stop it and back it up;</li>
 <li>pull and run the latest PMM Server docker image.</li>
+</ul>
+</li>
 </ul>
                 
                   
@@ -2259,7 +2337,7 @@ chmod +x get-pmm2.sh <span class="o">&amp;&amp;</span> <span class="se">\</span>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-06-17
+      Last update: 2021-06-22
     
   </small>
 </div>
