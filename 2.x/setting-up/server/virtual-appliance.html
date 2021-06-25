@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://pmm-doc.netlify.app/2.x/setting-up/server/virtual-appliance.html">
       
       <link rel="icon" href="../../_images/percona-favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.9">
     
     
       
@@ -2627,7 +2627,7 @@ wget https://www.percona.com/downloads/pmm2/2.18.0/ova/pmm-server-2.18.0.sha256s
 <h3 id="import">Import<a class="headerlink" href="#import" title="Permanent link">&para;</a></h3>
 <p><strong>UI</strong></p>
 <ol>
-<li>Select <em>File&rarr;Import</em>.</li>
+<li>Select <em>File → Import</em>.</li>
 <li>Click <em>Choose file&hellip;</em>.</li>
 <li>Navigate to the downloaded <code>.ova</code> file and select it.</li>
 <li>Click <em>Open</em>.</li>
@@ -2677,7 +2677,7 @@ pmm-server.vmx
 <ol>
 <li>If started, shut down the virtual machine.</li>
 <li>In the VMware main window, select the imported virtual machine.</li>
-<li>Click <em>Virtual Machine&rarr;Settings&hellip;</em></li>
+<li>Click <em>Virtual Machine → Settings&hellip;</em></li>
 <li>Click <em>Network Adapter</em>.</li>
 <li>In the <em>Bridged Networking</em> section, select <em>Autodetect</em>.</li>
 <li>Close the settings window.</li>
@@ -2686,7 +2686,7 @@ pmm-server.vmx
 <p><strong>UI</strong></p>
 <ol>
 <li>In the VMware main window, select the imported virtual machine.</li>
-<li>Click the play button <i class="uil uil-caret-right"></i> or select <em>Virtual Machine&rarr;Start Up</em>.</li>
+<li>Click the play button <i class="uil uil-caret-right"></i> or select <em>Virtual Machine → Start Up</em>.</li>
 <li>When the instance has booted, note the IP address in the guest console.</li>
 </ol>
 <p><strong>CLI/UI</strong></p>
@@ -2706,7 +2706,7 @@ pmm-server.vmx nogui
 <h3 id="import_1">Import<a class="headerlink" href="#import_1" title="Permanent link">&para;</a></h3>
 <p><strong>UI</strong></p>
 <ol>
-<li>Select <em>File&rarr;Import appliance&hellip;</em>.</li>
+<li>Select <em>File → Import appliance&hellip;</em>.</li>
 <li>In the <em>File</em> field, type the path to the downloaded <code>.ova</code> file, or click the folder icon to navigate and open it.</li>
 <li>Click <em>Continue</em>.</li>
 <li>On the <em>Appliance settings</em> page, review the settings and click <em>Import</em>.</li>
@@ -2815,7 +2815,7 @@ pmm-server.vmx nogui
     <div class="highlight"><pre><span></span><code>ssh-keygen -f admin
 </code></pre></div></li>
 <li>Log into the PMM user interface.</li>
-<li>Select <em>PMM&rarr;PMM Settings&rarr;SSH Key</em>.</li>
+<li>Select <em>PMM → PMM Settings → SSH Key</em>.</li>
 <li>Copy and paste the contents of the <code>admin.pub</code> file into the <em>SSH Key</em> field.</li>
 <li>Click <em>Apply SSH Key</em>. (This copies the public key to <code>/home/admin/.ssh/authorized_keys</code> in the guest).</li>
 <li>Log in via SSH (<code>N.N.N.N</code> is the guest IP address).
@@ -2847,8 +2847,8 @@ pmm-server.vmx nogui
 <h2 id="remove">Remove<a class="headerlink" href="#remove" title="Permanent link">&para;</a></h2>
 <p><strong>UI</strong></p>
 <ol>
-<li>Stop the virtual machine: select <em>Close&rarr;Power Off</em>.</li>
-<li>Remove the virtual machine: select <em>Remove&rarr;Delete all files</em>.</li>
+<li>Stop the virtual machine: select <em>Close → Power Off</em>.</li>
+<li>Remove the virtual machine: select <em>Remove → Delete all files</em>.</li>
 </ol>
                 
                   
@@ -2858,7 +2858,7 @@ pmm-server.vmx nogui
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-06-18
+      Last update: 2021-06-25
     
   </small>
 </div>
@@ -2937,10 +2937,10 @@ pmm-server.vmx nogui
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.b0710199.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.76f349be.min.js"></script>
+      <script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
       
         <script src="../../js/lightgallery.min.js"></script>
       

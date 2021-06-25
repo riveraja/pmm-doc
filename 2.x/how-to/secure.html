@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://pmm-doc.netlify.app/2.x/how-to/secure.html">
       
       <link rel="icon" href="../_images/percona-favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.9">
     
     
       
@@ -2400,10 +2400,22 @@ docker cp dhparam.pem pmm-server:/srv/nginx/dhparam.pem
 <h2 id="grafana-https-secure-cookies">Grafana HTTPS secure cookies<a class="headerlink" href="#grafana-https-secure-cookies" title="Permanent link">&para;</a></h2>
 <p>To enable:</p>
 <ol>
-<li>Start a shell within the Docker container: <code>docker exec -it pmm-server bash</code></li>
-<li>Edit <code>/etc/grafana/grafana.ini</code></li>
-<li>Enable <code>cookie_secure</code> and set the value to <code>true</code></li>
-<li>Restart Grafana: <code>supervisorctl restart grafana</code></li>
+<li>
+<p>Start a shell within the Docker container.</p>
+<div class="highlight"><pre><span></span><code>docker <span class="nb">exec</span> -it pmm-server bash
+</code></pre></div>
+</li>
+<li>
+<p>Edit <code>/etc/grafana/grafana.ini</code>.</p>
+</li>
+<li>
+<p>Enable <code>cookie_secure</code> and set the value to <code>true</code>.</p>
+</li>
+<li>
+<p>Restart Grafana.</p>
+<div class="highlight"><pre><span></span><code>supervisorctl restart grafana
+</code></pre></div>
+</li>
 </ol>
                 
                   
@@ -2413,7 +2425,7 @@ docker cp dhparam.pem pmm-server:/srv/nginx/dhparam.pem
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-06-15
+      Last update: 2021-06-25
     
   </small>
 </div>
@@ -2492,10 +2504,10 @@ docker cp dhparam.pem pmm-server:/srv/nginx/dhparam.pem
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.b0710199.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.76f349be.min.js"></script>
+      <script src="../assets/javascripts/bundle.82b56eb2.min.js"></script>
       
         <script src="../js/lightgallery.min.js"></script>
       

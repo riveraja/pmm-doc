@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://pmm-doc.netlify.app/2.x/using/platform/dbaas.html">
       
       <link rel="icon" href="../../_images/percona-favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.9">
     
     
       
@@ -2498,17 +2498,17 @@
 <h2 id="activate-dbaas">Activate DBaaS<a class="headerlink" href="#activate-dbaas" title="Permanent link">&para;</a></h2>
 <p>The DBaaS feature is turned off by default. To turn it on:</p>
 <ol>
-<li>Go to <em><i class="uil uil-bars"></i> PMM&rarr;PMM Settings&rarr;Advanced settings</em>.</li>
+<li>Go to <i class="uil uil-bars"></i> <em>PMM</em> → <em>PMM Settings</em> → <em>Advanced settings</em>.</li>
 <li>Click the <i class="uil uil-toggle-off"></i> toggle in the <em>Technical preview features</em> section of the page.</li>
 </ol>
 <h2 id="open-the-dbaas-dashboard">Open the DBaaS dashboard<a class="headerlink" href="#open-the-dbaas-dashboard" title="Permanent link">&para;</a></h2>
-<p>From the left menu, select <em><i class="uil uil-database"></i> DBaaS</em>.</p>
+<p>From the left menu, select <i class="uil uil-database"></i> <em>DBaaS</em>.</p>
 <p><div class="lightgallery"><a data-sub-html="" href="../../_images/PMM_DBaaS_Kubernetes_Cluster_Panel.jpg"><img alt="" src="../../_images/PMM_DBaaS_Kubernetes_Cluster_Panel.jpg" /></a></div></p>
 <h2 id="kubernetes-clusters">Kubernetes clusters<a class="headerlink" href="#kubernetes-clusters" title="Permanent link">&para;</a></h2>
 <h3 id="add-a-kubernetes-cluster">Add a Kubernetes cluster<a class="headerlink" href="#add-a-kubernetes-cluster" title="Permanent link">&para;</a></h3>
-<blockquote>
+<div class="admonition note alert alert-primary">
 <p>PXC and PSMDB operators are installed as part of the Kubernetes cluster registration process. It enables you to deploy database clusters into the Kubernetes cluster.</p>
-</blockquote>
+</div>
 <ol>
 <li>
 <p>Click <em>Register new Kubernetes Cluster</em></p>
@@ -2526,9 +2526,10 @@
 </li>
 </ol>
 <h3 id="unregister-a-kubernetes-cluster">Unregister a Kubernetes cluster<a class="headerlink" href="#unregister-a-kubernetes-cluster" title="Permanent link">&para;</a></h3>
-<blockquote>
+<div class="admonition caution alert alert-warning">
+<p class="admonition-title">Important</p>
 <p>You can&rsquo;t unregister a Kubernetes cluster if there DB clusters associated with it.</p>
-</blockquote>
+</div>
 <ol>
 <li>
 <p>Click <em>Unregister</em>.</p>
@@ -2666,8 +2667,8 @@
 <p><div class="lightgallery"><a data-sub-html="" href="../../_images/PMM_DBaaS_DB_Cluster_Delete.png"><img alt="" src="../../_images/PMM_DBaaS_DB_Cluster_Delete.png" /></a></div></p>
 </li>
 </ol>
-<div class="admonition caution alert alert-warning">
-<p class="admonition-title">Important</p>
+<div class="admonition danger alert alert-danger">
+<p class="admonition-title">Danger</p>
 <p>Deleting a cluster in this way also deletes any attached volumes.</p>
 </div>
 <h3 id="edit-a-db-cluster">Edit a DB Cluster<a class="headerlink" href="#edit-a-db-cluster" title="Permanent link">&para;</a></h3>
@@ -2717,10 +2718,10 @@
 </ul>
 </li>
 </ol>
-<blockquote>
-<p><strong>See also</strong>
-<a href="../../setting-up/server/dbaas.html">Setting up a development environment for DBaaS</a></p>
-</blockquote>
+<div class="admonition seealso alert alert-info">
+<p class="admonition-title">See also</p>
+<p><a href="../../setting-up/server/dbaas.html">Setting up a development environment for DBaaS</a></p>
+</div>
                 
                   
                     
@@ -2729,7 +2730,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-06-23
+      Last update: 2021-06-25
     
   </small>
 </div>
@@ -2808,10 +2809,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.b0710199.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.477d984a.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.76f349be.min.js"></script>
+      <script src="../../assets/javascripts/bundle.82b56eb2.min.js"></script>
       
         <script src="../../js/lightgallery.min.js"></script>
       

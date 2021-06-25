@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://pmm-doc.netlify.app/2.x/how-to/troubleshoot.html">
       
       <link rel="icon" href="../_images/percona-favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.8">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.9">
     
     
       
@@ -2529,7 +2529,7 @@
 <p>In a browser, visit <code>https://&lt;address-of-your-pmm-server&gt;/logs.zip</code>.</p>
 <p><strong>From Settings page</strong></p>
 <ol>
-<li>Select <em><i class="uil uil-cog"></i> Configuration&rarr;<i class="uil uil-setting"></i> Settings</em>.</li>
+<li>Select <i class="uil uil-cog"></i> <em>Configuration</em> → <i class="uil uil-setting"></i> <em>Settings</em>.</li>
 <li>Click <em>Download server diagnostics</em>. (See <a href="configure.html#diagnostics">Diagnostics in PMM Settings</a>.)</li>
 </ol>
 <h2 id="connection-difficulties">Connection difficulties<a class="headerlink" href="#connection-difficulties" title="Permanent link">&para;</a></h2>
@@ -2548,12 +2548,12 @@
 <h3 id="integrated-alerting-icon-but-no-submenu"><i class="uil uil-bell"></i> Integrated Alerting icon but no submenu<a class="headerlink" href="#integrated-alerting-icon-but-no-submenu" title="Permanent link">&para;</a></h3>
 <p>Integrated Alerting isn&rsquo;t activated.</p>
 <ol>
-<li>Go to <em><i class="uil uil-cog"></i> Configuration&rarr;<i class="uil uil-setting"></i> Settings&rarr;Advanced Settings</em>.</li>
+<li>Go to <i class="uil uil-cog"></i> <em>Configuration</em> → <i class="uil uil-setting"></i> <em>Settings</em> → <em>Advanced Settings</em>.</li>
 <li>Enable <em>Integrated Alerting</em>.</li>
 </ol>
 <h3 id="unreachable-external-ip-addresses">Unreachable external IP addresses<a class="headerlink" href="#unreachable-external-ip-addresses" title="Permanent link">&para;</a></h3>
 <p><strong>When I get an email or page from my system the IP is not reachable from outside my organization how do I fix this?</strong></p>
-<p>To configure your PMM Server’s Public Address, Select <em><i class="uil uil-cog"></i> Configuration&rarr;<i class="uil uil-setting"></i> Settings&rarr;Advanced Settings</em>, and supply an address to use in your alert notifications.</p>
+<p>To configure your PMM Server’s Public Address, Select <i class="uil uil-cog"></i> <em>Configuration</em> → <i class="uil uil-setting"></i> <em>Settings</em> → <em>Advanced Settings</em>, and supply an address to use in your alert notifications.</p>
 <h3 id="what-is-alertmanager-integration">What is &lsquo;Alertmanager integration&rsquo;?<a class="headerlink" href="#what-is-alertmanager-integration" title="Permanent link">&para;</a></h3>
 <p><strong>There’s already an Alertmanager integration tab without me turning it on, I know because I was using your existing Alertmanager integration.</strong></p>
 <p>This will continue to work but will be renamed <em>External Alertmanager</em>.</p>
@@ -2561,8 +2561,8 @@
 <p><strong>I tried to setup a Slack/Email channel but nothing happened.</strong></p>
 <p>Before you can use a notification channel you must provide your connection details.</p>
 <ol>
-<li>Go to PMM &rarr; PMM Settings&rarr; Communication</li>
-<li>Define your SMTP server or Slack incoming webhook URL</li>
+<li>Go to <em>PMM</em> → <em>PMM Settings</em> → <em>Communication</em>.</li>
+<li>Define your SMTP server or Slack incoming webhook URL.</li>
 </ol>
 <p>For PagerDuty you can configure in the notification channel tab of Integrated Alerting by supplying your server/routing key.</p>
 <h3 id="whats-the-difference-usernamepassword-vs-identitysecret">What&rsquo;s the difference: Username/Password vs Identity/Secret<a class="headerlink" href="#whats-the-difference-usernamepassword-vs-identitysecret" title="Permanent link">&para;</a></h3>
@@ -2583,9 +2583,9 @@
 <li>Threshold - float value, it has different meanings depending on what template is used</li>
 <li>Duration - The duration the condition must be satisfied in seconds</li>
 <li>Filters - A Key, Evaluator, and Value. E.g. <code>service_name=ps5.7</code><ul>
-<li>Key must be an exact match. You can find a complete list of keys by using the <i class="uil uil-compass"></i><em>Explore</em> main menu item in PMM</li>
+<li>Key must be an exact match. You can find a complete list of keys by using the <i class="uil uil-compass"></i> <em>Explore</em> main menu item in PMM</li>
 <li>Evaluator can be any of: <code>=</code>, <code>=~</code></li>
-<li>Value is an exact match or when used with a ‘fuzzy’ evaluator (=~) can be a regular expression. E.g. <code>service_name=~ps.*</code></li>
+<li>Value is an exact match or when used with a ‘fuzzy’ evaluator (<code>=~</code>) can be a regular expression. E.g. <code>service_name=~ps.*</code></li>
 </ul>
 </li>
 </ul>
@@ -2603,7 +2603,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-06-23
+      Last update: 2021-06-25
     
   </small>
 </div>
@@ -2682,10 +2682,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.b0710199.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.76f349be.min.js"></script>
+      <script src="../assets/javascripts/bundle.82b56eb2.min.js"></script>
       
         <script src="../js/lightgallery.min.js"></script>
       
