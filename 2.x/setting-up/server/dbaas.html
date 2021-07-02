@@ -823,59 +823,22 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
-      
-      <label class="md-nav__link" for="__nav_3_5">
-        <span class="md-nav__icon md-icon"></span>
-        
-          <a href="../../using/platform/index.html" class="md-nav__link"
-            style="margin: initial; padding: initial; pointer-events: initial">
-        
-          Percona Platform
-        </a>
-      </label>
-      <nav class="md-nav" aria-label="Percona Platform" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_5">
-          <span class="md-nav__icon md-icon"></span>
-          
-            <a href="../../using/platform/index.html" class="md-nav__link"
-              style="margin: initial; padding: initial; pointer-events: initial">
-          
-            Percona Platform
-          </a>
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../../using/platform/security-threat-tool.html" class="md-nav__link">
-        Security Threat Tool
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../using/platform/dbaas.html" class="md-nav__link">
+      <a href="../../using/dbaas.html" class="md-nav__link">
         DBaaS
       </a>
     </li>
   
 
           
-        </ul>
-      </nav>
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../using/security-threat-tool.html" class="md-nav__link">
+        Security Threat Tool
+      </a>
     </li>
   
 
@@ -2606,7 +2569,7 @@ ln -s /usr/local/sbin/minikube /usr/sbin/minikube
 </ol>
 <div class="admonition caution alert alert-warning">
 <p class="admonition-title">Important</p>
-<p>You must <a href="../../using/platform/dbaas.html#activate-dbaas">activate DBaaS</a> using the PMM UI if you omitted <code>--env ENABLE_DBAAS=1</code> when starting up the container.</p>
+<p>You must <a href="../../using/dbaas.html#activate-dbaas">activate DBaaS</a> using the PMM UI if you omitted <code>--env ENABLE_DBAAS=1</code> when starting up the container.</p>
 </div>
 <h2 id="create-a-kubernetes-cluster">Create a Kubernetes cluster<a class="headerlink" href="#create-a-kubernetes-cluster" title="Permanent link">&para;</a></h2>
 <div class="admonition note alert alert-primary">
@@ -2627,7 +2590,7 @@ minikube start
 <div class="highlight"><pre><span></span><code>minikube kubectl -- config view --flatten --minify
 </code></pre></div>
 <div class="admonition note alert alert-primary">
-<p>You will need to copy this output to your clipboard and continue with <a href="../../using/platform/dbaas.html#add-a-kubernetes-cluster">adding a Kubernetes cluster to PMM</a>.</p>
+<p>You will need to copy this output to your clipboard and continue with <a href="../../using/dbaas.html#add-a-kubernetes-cluster">adding a Kubernetes cluster to PMM</a>.</p>
 </div>
 </li>
 </ol>
@@ -2704,7 +2667,7 @@ users:
 </ul>
 </li>
 <li>
-<p>Follow the instructions on <a href="../../using/platform/dbaas.html#add-a-kubernetes-cluster">How to add a Kubernetes cluster</a> with kubeconfig from the previous step.</p>
+<p>Follow the instructions on <a href="../../using/dbaas.html#add-a-kubernetes-cluster">How to add a Kubernetes cluster</a> with kubeconfig from the previous step.</p>
 <div class="admonition note alert alert-primary">
 <p>If possible, the connection details will show the cluster&rsquo;s external IP (not possible with minikube).</p>
 </div>
@@ -2809,7 +2772,7 @@ kubectl create clusterrolebinding cluster-admin-binding --clusterrole<span class
 </code></pre></div>
 </li>
 <li>
-<p>Follow the instructions on <a href="../../using/platform/dbaas.html#add-a-kubernetes-cluster">How to add a Kubernetes cluster</a> with kubeconfig from the previous step.</p>
+<p>Follow the instructions on <a href="../../using/dbaas.html#add-a-kubernetes-cluster">How to add a Kubernetes cluster</a> with kubeconfig from the previous step.</p>
 </li>
 </ol>
 <h2 id="deleting-clusters">Deleting clusters<a class="headerlink" href="#deleting-clusters" title="Permanent link">&para;</a></h2>
@@ -2885,10 +2848,10 @@ curl https://raw.githubusercontent.com/percona-platform/dbaas-controller/7a5fff0
 <p>Set the public address for PMM Server in PMM settings UI</p>
 </li>
 <li>
-<p>Follow the steps for <a href="../../using/platform/dbaas.html#add-a-kubernetes-cluster">Add a Kubernetes cluster</a>.</p>
+<p>Follow the steps for <a href="../../using/dbaas.html#add-a-kubernetes-cluster">Add a Kubernetes cluster</a>.</p>
 </li>
 <li>
-<p>Follow the steps for <a href="../../using/platform/dbaas.html#add-a-db-cluster">Add a DB Cluster</a>.</p>
+<p>Follow the steps for <a href="../../using/dbaas.html#add-a-db-cluster">Add a DB Cluster</a>.</p>
 </li>
 <li>
 <p>Get the IP address to connect your app/service:</p>
@@ -2903,7 +2866,7 @@ curl https://raw.githubusercontent.com/percona-platform/dbaas-controller/7a5fff0
 <div class="admonition seealso alert alert-info">
 <p class="admonition-title">See also</p>
 <ul>
-<li><a href="../../using/platform/dbaas.html">DBaaS Dashboard</a></li>
+<li><a href="../../using/dbaas.html">DBaaS Dashboard</a></li>
 <li><a href="https://minikube.sigs.k8s.io/docs/start/">Install minikube</a></li>
 <li><a href="https://medium.com/@chrisedrego/setting-up-a-standalone-mysql-instance-on-kubernetes-exposing-it-using-nginx-ingress-controller-262fc7af593a">Setting up a Standalone MYSQL Instance on Kubernetes &amp; exposing it using Nginx Ingress Controller</a></li>
 <li><a href="https://kubernetes.io/docs/tasks/access-application-cluster/service-access-application-cluster/">Use a Service to Access an Application in a Cluster</a></li>
@@ -2918,7 +2881,7 @@ curl https://raw.githubusercontent.com/percona-platform/dbaas-controller/7a5fff0
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-06-28
+      Last update: 2021-07-02
     
   </small>
 </div>
