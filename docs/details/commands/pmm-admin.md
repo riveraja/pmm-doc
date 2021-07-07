@@ -143,7 +143,7 @@ PMM communicates with the PMM Server via a PMM agent process.
 !!! caution alert alert-warning "Important"
     Changing PMM credentials does not affect a running `pmm-agent`.
 
-    `pmm-agent` and `pmm-admin` use the connection credentials passed in via the `--server-url` option. If these credentials are subsequently changed (via the PMM UI or a direct API request to the Grafana engine), `pmm-agent` connectivity is unaffected and metrics continue to be exported.
+    `pmm-agent` and exporters use the connection credentials passed in via the `--server-url` option. If these credentials are subsequently changed (via the PMM UI or a direct API request to the Grafana engine), `pmm-agent` connectivity is unaffected and metrics continue to be exported.
 
 
 #### `pmm-admin register`
