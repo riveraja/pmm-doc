@@ -140,6 +140,12 @@ PMM communicates with the PMM Server via a PMM agent process.
         - `push`: agent will push metrics.
         - `pull`: server scrapes metrics from agent.
 
+!!! caution alert alert-warning "Important"
+    Changing PMM credentials does not affect a running `pmm-agent`.
+
+    `pmm-agent` and `pmm-admin` use the connection credentials passed in via the `--server-url` option. If these credentials are subsequently changed (via the PMM UI or a direct API request to the Grafana engine), `pmm-agent` connectivity is unaffected and metrics continue to be exported.
+
+
 #### `pmm-admin register`
 
 `pmm-admin register [FLAGS] [node-address] [node-type] [node-name]`
@@ -693,7 +699,11 @@ When you remove a service, collected data remains on PMM Server for the specifie
 ## EXAMPLES
 
 ```sh
-pmm-admin add mysql --query-source=slowlog --username=pmm --password=pmm sl-mysql 127.0.0.1:3306
+pmm-admin add mysql \
+--query-source=slowlog \
+--username=pmm \
+--password=pmm \
+sl-mysql 127.0.0.1:3306
 ```
 
 ```txt
@@ -703,7 +713,12 @@ Service name: sl-mysql
 ```
 
 ```sh
-pmm-admin add mysql --username=pmm --password=pmm --service-name=ps-mysql --host=127.0.0.1 --port=3306
+pmm-admin add mysql \
+--username=pmm \
+--password=pmm \
+--service-name=ps-mysql \
+--host=127.0.0.1 \
+--port=3306
 ```
 
 ```sh
@@ -730,7 +745,13 @@ Agents:
 ### Disable collectors
 
 ```sh
-pmm-admin add mysql --disable-collectors='heartbeat,global_status,info_schema.innodb_cmp' --username=pmm --password=pmm --service-name=db1-mysql --host=127.0.0.1 --port=3306
+pmm-admin add mysql \
+--disable-collectors='heartbeat,global_status,info_schema.innodb_cmp' \
+--username=pmm \
+--password=pmm \
+--service-name=db1-mysql \
+--host=127.0.0.1 \
+--port=3306
 ```
 
 For other collectors that you can disable with the `--disable-collectors` option, please visit the official repositories for each exporter:
